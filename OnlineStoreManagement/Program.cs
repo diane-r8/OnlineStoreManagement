@@ -15,7 +15,7 @@ namespace OnlineStoreManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain());  // Corrected form name
+            Application.Run(new frmLogin());  
         }
     }
 }

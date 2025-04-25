@@ -31,5 +31,15 @@ namespace OnlineStoreManagement
         {
 
         }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCustomerManagement_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

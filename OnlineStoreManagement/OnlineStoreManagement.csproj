@@ -59,6 +59,18 @@
     <Compile Include="frmCustomers.Designer.cs">
       <DependentUpon>frmCustomers.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForgotPassword.Designer.cs">
+      <DependentUpon>frmForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,10 +101,22 @@
     <Compile Include="frmReviews.Designer.cs">
       <DependentUpon>frmReviews.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserManagement.Designer.cs">
+      <DependentUpon>frmUserManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCustomers.resx">
       <DependentUpon>frmCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmForgotPassword.resx">
+      <DependentUpon>frmForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
@@ -108,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmReviews.resx">
       <DependentUpon>frmReviews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserManagement.resx">
+      <DependentUpon>frmUserManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
