@@ -122,7 +122,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(92, 587);
+            this.label1.Location = new System.Drawing.Point(89, 587);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(170, 25);
             this.label1.TabIndex = 6;
@@ -142,7 +142,7 @@
             // 
             this.lnkForgotPassword.AutoSize = true;
             this.lnkForgotPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lnkForgotPassword.Location = new System.Drawing.Point(259, 587);
+            this.lnkForgotPassword.Location = new System.Drawing.Point(267, 587);
             this.lnkForgotPassword.Name = "lnkForgotPassword";
             this.lnkForgotPassword.Size = new System.Drawing.Size(102, 25);
             this.lnkForgotPassword.TabIndex = 5;

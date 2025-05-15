@@ -16,6 +16,7 @@ namespace OnlineStoreManagement
         public frmLogin()
         {
             InitializeComponent();
+            lnkForgotPassword.LinkClicked += lnkForgotPassword_LinkClicked;
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -65,6 +66,12 @@ namespace OnlineStoreManagement
                     MessageBox.Show("Error: " + ex.Message);
                 }
             }
+        }
+
+        private void lnkForgotPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmForgotPassword forgotPasswordForm = new frmForgotPassword();
+            forgotPasswordForm.Show();
         }
     }
 }

@@ -37,29 +37,25 @@
             this.btnPaymentManagement = new System.Windows.Forms.Button();
             this.btnReviewManagement = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnReportsManagement = new System.Windows.Forms.Button();
             this.btnUserManagement = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCustomerManagement
@@ -90,6 +86,7 @@
             this.btnOrderManagement.TabIndex = 4;
             this.btnOrderManagement.Text = "Order Management →";
             this.btnOrderManagement.UseVisualStyleBackColor = false;
+            this.btnOrderManagement.Click += new System.EventHandler(this.btnOrderManagement_Click);
             // 
             // pictureBox1
             // 
@@ -120,6 +117,7 @@
             this.btnProductManagement.TabIndex = 5;
             this.btnProductManagement.Text = "Product Management →";
             this.btnProductManagement.UseVisualStyleBackColor = false;
+            this.btnProductManagement.Click += new System.EventHandler(this.btnProductManagement_Click);
             // 
             // lblTitle
             // 
@@ -147,6 +145,7 @@
             this.btnPaymentManagement.TabIndex = 6;
             this.btnPaymentManagement.Text = "Payment Management →";
             this.btnPaymentManagement.UseVisualStyleBackColor = false;
+            this.btnPaymentManagement.Click += new System.EventHandler(this.btnPaymentManagement_Click);
             // 
             // btnReviewManagement
             // 
@@ -161,22 +160,19 @@
             this.btnReviewManagement.TabIndex = 7;
             this.btnReviewManagement.Text = "Review Management →";
             this.btnReviewManagement.UseVisualStyleBackColor = false;
+            this.btnReviewManagement.Click += new System.EventHandler(this.btnReviewManagement_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.YellowGreen;
-            this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Controls.Add(this.pictureBox9);
-            this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.btnReportsManagement);
             this.panel1.Controls.Add(this.btnUserManagement);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.btnReviewManagement);
             this.panel1.Controls.Add(this.btnPaymentManagement);
             this.panel1.Controls.Add(this.lblTitle);
@@ -191,16 +187,6 @@
             this.panel1.Size = new System.Drawing.Size(1002, 730);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(529, 612);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(87, 78);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 22;
-            this.pictureBox6.TabStop = false;
             // 
             // pictureBox7
             // 
@@ -232,16 +218,6 @@
             this.pictureBox9.TabIndex = 19;
             this.pictureBox9.TabStop = false;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(54, 612);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(87, 78);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 18;
-            this.pictureBox5.TabStop = false;
-            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
@@ -272,20 +248,6 @@
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
             // 
-            // btnReportsManagement
-            // 
-            this.btnReportsManagement.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnReportsManagement.BackColor = System.Drawing.Color.Orange;
-            this.btnReportsManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportsManagement.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnReportsManagement.Location = new System.Drawing.Point(141, 612);
-            this.btnReportsManagement.Name = "btnReportsManagement";
-            this.btnReportsManagement.Size = new System.Drawing.Size(324, 75);
-            this.btnReportsManagement.TabIndex = 14;
-            this.btnReportsManagement.Text = "Reports Management →";
-            this.btnReportsManagement.UseVisualStyleBackColor = false;
-            // 
             // btnUserManagement
             // 
             this.btnUserManagement.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -299,6 +261,7 @@
             this.btnUserManagement.TabIndex = 13;
             this.btnUserManagement.Text = "User Management →";
             this.btnUserManagement.UseVisualStyleBackColor = false;
+            this.btnUserManagement.Click += new System.EventHandler(this.btnUserManagement_Click);
             // 
             // label1
             // 
@@ -314,20 +277,23 @@
             // 
             // btnExit
             // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExit.BackColor = System.Drawing.Color.Crimson;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExit.Location = new System.Drawing.Point(618, 612);
+            this.btnExit.Location = new System.Drawing.Point(331, 396);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(324, 75);
             this.btnExit.TabIndex = 11;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Location = new System.Drawing.Point(12, 223);
+            this.groupBox1.Controls.Add(this.btnExit);
+            this.groupBox1.Location = new System.Drawing.Point(12, 213);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(978, 495);
             this.groupBox1.TabIndex = 23;
@@ -346,14 +312,13 @@
             this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -370,12 +335,9 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnUserManagement;
-        private System.Windows.Forms.Button btnReportsManagement;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;

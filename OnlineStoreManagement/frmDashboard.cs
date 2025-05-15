@@ -41,5 +41,40 @@ namespace OnlineStoreManagement
         {
 
         }
+
+        private void btnProductManagement_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOrderManagement_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUserManagement_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReportsManagement_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPaymentManagement_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReviewManagement_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
