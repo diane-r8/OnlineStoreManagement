@@ -39,22 +39,26 @@ namespace OnlineStoreManagement
 
         private void btnCustomerManagement_Click(object sender, EventArgs e)
         {
-
+            frmCustomers customersForm = new frmCustomers();
+            customersForm.Show();
         }
 
         private void btnProductManagement_Click(object sender, EventArgs e)
         {
-
+            frmProducts productsForm = new frmProducts();
+            productsForm.Show();
         }
 
         private void btnOrderManagement_Click(object sender, EventArgs e)
         {
-
+            frmOrders ordersForm = new frmOrders();
+            ordersForm.Show();
         }
 
         private void btnUserManagement_Click(object sender, EventArgs e)
         {
-
+            frmUserManagement userManagementForm = new frmUserManagement();
+            userManagementForm.Show();
         }
 
         private void btnReportsManagement_Click(object sender, EventArgs e)
@@ -64,17 +68,19 @@ namespace OnlineStoreManagement
 
         private void btnPaymentManagement_Click(object sender, EventArgs e)
         {
-
+            frmPayments paymentsForm = new frmPayments();
+            paymentsForm.Show();
         }
 
         private void btnReviewManagement_Click(object sender, EventArgs e)
         {
-
+            frmReviews reviewsForm = new frmReviews();
+            reviewsForm.Show();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }
