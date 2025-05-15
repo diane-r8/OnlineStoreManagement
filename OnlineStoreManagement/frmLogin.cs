@@ -44,17 +44,20 @@ namespace OnlineStoreManagement
                 try
                 {
                     conn.Open();
-                    string query = "SELECT * FROM users WHERE username = @username AND password = @password";
+                    string query = @"SELECT u.*, r.role_name FROM users u LEFT JOIN roles r ON u.role_id = r.role_id WHERE u.username = @username AND u.password = @password";
                     MySqlCommand cmd = new MySqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@username", username);
                     cmd.Parameters.AddWithValue("@password", password); // NOTE: use hashing in production
 
                     MySqlDataReader reader = cmd.ExecuteReader();
-                    if (reader.HasRows)
+                    if (reader.Read())
                     {
+                        CurrentUser.Username = reader["username"].ToString();
+                        CurrentUser.RoleName = reader["role_name"].ToString();
+                        CurrentUser.RoleId = Convert.ToInt32(reader["role_id"]);
                         MessageBox.Show("Login successful!", "Access Granted");
                         this.Hide();
-                        new frmDashboard().Show(); // Ensure Dashboard is properly referenced
+                        new frmDashboard().Show();
                     }
                     else
                     {

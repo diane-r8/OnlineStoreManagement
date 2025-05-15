@@ -31,45 +31,49 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUserManagement));
             this.tabControlUserManager = new System.Windows.Forms.TabControl();
             this.tabPageAddUser = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnSaveAccount = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
             this.tabPageUpdateUser = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBack2 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnUpdateUser = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtEmailUpdate = new System.Windows.Forms.TextBox();
+            this.txtPasswordUpdate = new System.Windows.Forms.TextBox();
+            this.txtUsernameUpdate = new System.Windows.Forms.TextBox();
+            this.txtSearchbyUsernameUpdate = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.btnSearchUser = new System.Windows.Forms.Button();
+            this.btnSearchbyUsernameUpdate = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.tabPageDeleteUser = new System.Windows.Forms.TabPage();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnSearchbyUsernameDelete = new System.Windows.Forms.Button();
+            this.btnDeleteAccount = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtSearchbyUsernameDelete = new System.Windows.Forms.TextBox();
+            this.btnBack3 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabPageViewAccountsList = new System.Windows.Forms.TabPage();
+            this.btnBack4 = new System.Windows.Forms.Button();
             this.btnExport = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.btnDeleteAccount = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.dataGridViewAccountsList = new System.Windows.Forms.DataGridView();
+            this.comboBoxRole = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBoxRoleUpdate = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.tabControlUserManager.SuspendLayout();
             this.tabPageAddUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -78,10 +82,10 @@
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPageDeleteUser.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabPageViewAccountsList.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAccountsList)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlUserManager
@@ -100,7 +104,7 @@
             // tabPageAddUser
             // 
             this.tabPageAddUser.BackColor = System.Drawing.Color.YellowGreen;
-            this.tabPageAddUser.Controls.Add(this.button2);
+            this.tabPageAddUser.Controls.Add(this.btnBack);
             this.tabPageAddUser.Controls.Add(this.pictureBox1);
             this.tabPageAddUser.Controls.Add(this.label9);
             this.tabPageAddUser.Controls.Add(this.groupBox1);
@@ -113,17 +117,17 @@
             this.tabPageAddUser.TabIndex = 0;
             this.tabPageAddUser.Text = "Add User";
             // 
-            // button2
+            // btnBack
             // 
-            this.button2.BackColor = System.Drawing.Color.Crimson;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(811, 632);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(156, 41);
-            this.button2.TabIndex = 34;
-            this.button2.Text = "Back";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnBack.BackColor = System.Drawing.Color.Crimson;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBack.Location = new System.Drawing.Point(811, 632);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(156, 41);
+            this.btnBack.TabIndex = 34;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -149,16 +153,18 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.comboBoxRole);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtEmail);
             this.groupBox1.Controls.Add(this.btnSaveAccount);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtPassword);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Location = new System.Drawing.Point(114, 202);
+            this.groupBox1.Controls.Add(this.txtUsername);
+            this.groupBox1.Location = new System.Drawing.Point(114, 186);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(761, 398);
+            this.groupBox1.Size = new System.Drawing.Size(761, 427);
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -168,7 +174,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(85, 217);
+            this.label3.Location = new System.Drawing.Point(85, 262);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 29);
             this.label3.TabIndex = 31;
@@ -179,25 +185,25 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(85, 138);
+            this.label2.Location = new System.Drawing.Point(85, 123);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(135, 29);
             this.label2.TabIndex = 30;
             this.label2.Text = "Password:";
             // 
-            // textBox3
+            // txtEmail
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(284, 217);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(392, 35);
-            this.textBox3.TabIndex = 29;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(284, 262);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(392, 35);
+            this.txtEmail.TabIndex = 29;
             // 
             // btnSaveAccount
             // 
             this.btnSaveAccount.BackColor = System.Drawing.Color.Orange;
             this.btnSaveAccount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSaveAccount.Location = new System.Drawing.Point(210, 301);
+            this.btnSaveAccount.Location = new System.Drawing.Point(211, 335);
             this.btnSaveAccount.Name = "btnSaveAccount";
             this.btnSaveAccount.Size = new System.Drawing.Size(349, 67);
             this.btnSaveAccount.TabIndex = 6;
@@ -205,39 +211,39 @@
             this.btnSaveAccount.UseVisualStyleBackColor = false;
             this.btnSaveAccount.Click += new System.EventHandler(this.btnSaveAccount_Click);
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(284, 138);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(392, 35);
-            this.textBox2.TabIndex = 28;
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(284, 123);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(392, 35);
+            this.txtPassword.TabIndex = 28;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(85, 61);
+            this.label1.Location = new System.Drawing.Point(85, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 29);
             this.label1.TabIndex = 3;
             this.label1.Text = "Username:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // txtUsername
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(284, 61);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(392, 35);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(284, 55);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(392, 35);
+            this.txtUsername.TabIndex = 0;
+            this.txtUsername.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // tabPageUpdateUser
             // 
             this.tabPageUpdateUser.BackColor = System.Drawing.Color.YellowGreen;
-            this.tabPageUpdateUser.Controls.Add(this.button1);
+            this.tabPageUpdateUser.Controls.Add(this.btnBack2);
             this.tabPageUpdateUser.Controls.Add(this.groupBox2);
             this.tabPageUpdateUser.Controls.Add(this.pictureBox2);
             this.tabPageUpdateUser.Controls.Add(this.label10);
@@ -249,33 +255,35 @@
             this.tabPageUpdateUser.TabIndex = 1;
             this.tabPageUpdateUser.Text = "Update User Profile";
             // 
-            // button1
+            // btnBack2
             // 
-            this.button1.BackColor = System.Drawing.Color.Crimson;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(811, 632);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(156, 41);
-            this.button1.TabIndex = 37;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnBack2.BackColor = System.Drawing.Color.Crimson;
+            this.btnBack2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBack2.Location = new System.Drawing.Point(811, 632);
+            this.btnBack2.Name = "btnBack2";
+            this.btnBack2.Size = new System.Drawing.Size(156, 41);
+            this.btnBack2.TabIndex = 37;
+            this.btnBack2.Text = "Back";
+            this.btnBack2.UseVisualStyleBackColor = false;
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.comboBoxRoleUpdate);
             this.groupBox2.Controls.Add(this.btnUpdateUser);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.textBox9);
+            this.groupBox2.Controls.Add(this.txtEmailUpdate);
+            this.groupBox2.Controls.Add(this.txtPasswordUpdate);
+            this.groupBox2.Controls.Add(this.txtUsernameUpdate);
+            this.groupBox2.Controls.Add(this.txtSearchbyUsernameUpdate);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.btnSearchUser);
-            this.groupBox2.Location = new System.Drawing.Point(100, 175);
+            this.groupBox2.Controls.Add(this.btnSearchbyUsernameUpdate);
+            this.groupBox2.Location = new System.Drawing.Point(100, 153);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(809, 431);
+            this.groupBox2.Size = new System.Drawing.Size(809, 473);
             this.groupBox2.TabIndex = 36;
             this.groupBox2.TabStop = false;
             // 
@@ -284,7 +292,7 @@
             this.btnUpdateUser.BackColor = System.Drawing.Color.Orange;
             this.btnUpdateUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnUpdateUser.Location = new System.Drawing.Point(192, 339);
+            this.btnUpdateUser.Location = new System.Drawing.Point(192, 381);
             this.btnUpdateUser.Name = "btnUpdateUser";
             this.btnUpdateUser.Size = new System.Drawing.Size(445, 70);
             this.btnUpdateUser.TabIndex = 36;
@@ -297,7 +305,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(43, 263);
+            this.label4.Location = new System.Drawing.Point(43, 307);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 29);
             this.label4.TabIndex = 35;
@@ -308,7 +316,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(43, 197);
+            this.label5.Location = new System.Drawing.Point(43, 178);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(135, 29);
             this.label5.TabIndex = 34;
@@ -319,44 +327,43 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(43, 127);
+            this.label6.Location = new System.Drawing.Point(43, 111);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(139, 29);
             this.label6.TabIndex = 33;
             this.label6.Text = "Username:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            
+            // txtEmailUpdate
             // 
-            // textBox4
+            this.txtEmailUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmailUpdate.Location = new System.Drawing.Point(220, 307);
+            this.txtEmailUpdate.Name = "txtEmailUpdate";
+            this.txtEmailUpdate.Size = new System.Drawing.Size(390, 35);
+            this.txtEmailUpdate.TabIndex = 32;
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(220, 263);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(390, 35);
-            this.textBox4.TabIndex = 32;
+            // txtPasswordUpdate
             // 
-            // textBox5
+            this.txtPasswordUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPasswordUpdate.Location = new System.Drawing.Point(220, 178);
+            this.txtPasswordUpdate.Name = "txtPasswordUpdate";
+            this.txtPasswordUpdate.Size = new System.Drawing.Size(390, 35);
+            this.txtPasswordUpdate.TabIndex = 31;
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(220, 191);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(390, 35);
-            this.textBox5.TabIndex = 31;
+            // txtUsernameUpdate
             // 
-            // textBox6
+            this.txtUsernameUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsernameUpdate.Location = new System.Drawing.Point(220, 111);
+            this.txtUsernameUpdate.Name = "txtUsernameUpdate";
+            this.txtUsernameUpdate.Size = new System.Drawing.Size(390, 35);
+            this.txtUsernameUpdate.TabIndex = 30;
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(220, 124);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(390, 35);
-            this.textBox6.TabIndex = 30;
+            // txtSearchbyUsernameUpdate
             // 
-            // textBox9
-            // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(220, 43);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(390, 35);
-            this.textBox9.TabIndex = 29;
+            this.txtSearchbyUsernameUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchbyUsernameUpdate.Location = new System.Drawing.Point(220, 43);
+            this.txtSearchbyUsernameUpdate.Name = "txtSearchbyUsernameUpdate";
+            this.txtSearchbyUsernameUpdate.Size = new System.Drawing.Size(390, 35);
+            this.txtSearchbyUsernameUpdate.TabIndex = 29;
             // 
             // label12
             // 
@@ -364,28 +371,28 @@
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label12.Location = new System.Drawing.Point(43, 34);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(174, 59);
+            this.label12.Size = new System.Drawing.Size(174, 77);
             this.label12.TabIndex = 28;
             this.label12.Text = "Search by Username:";
             // 
-            // btnSearchUser
+            // btnSearchbyUsernameUpdate
             // 
-            this.btnSearchUser.BackColor = System.Drawing.Color.Orange;
-            this.btnSearchUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchUser.Location = new System.Drawing.Point(618, 37);
-            this.btnSearchUser.Name = "btnSearchUser";
-            this.btnSearchUser.Size = new System.Drawing.Size(133, 41);
-            this.btnSearchUser.TabIndex = 15;
-            this.btnSearchUser.Text = "Search";
-            this.btnSearchUser.UseVisualStyleBackColor = false;
-            this.btnSearchUser.Click += new System.EventHandler(this.button2_Click);
+            this.btnSearchbyUsernameUpdate.BackColor = System.Drawing.Color.Orange;
+            this.btnSearchbyUsernameUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchbyUsernameUpdate.Location = new System.Drawing.Point(618, 37);
+            this.btnSearchbyUsernameUpdate.Name = "btnSearchbyUsernameUpdate";
+            this.btnSearchbyUsernameUpdate.Size = new System.Drawing.Size(133, 41);
+            this.btnSearchbyUsernameUpdate.TabIndex = 15;
+            this.btnSearchbyUsernameUpdate.Text = "Search";
+            this.btnSearchbyUsernameUpdate.UseVisualStyleBackColor = false;
+            this.btnSearchbyUsernameUpdate.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(96, 18);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(154, 161);
+            this.pictureBox2.Size = new System.Drawing.Size(154, 138);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 35;
             this.pictureBox2.TabStop = false;
@@ -406,7 +413,7 @@
             // 
             this.tabPageDeleteUser.BackColor = System.Drawing.Color.YellowGreen;
             this.tabPageDeleteUser.Controls.Add(this.groupBox3);
-            this.tabPageDeleteUser.Controls.Add(this.button3);
+            this.tabPageDeleteUser.Controls.Add(this.btnBack3);
             this.tabPageDeleteUser.Controls.Add(this.label11);
             this.tabPageDeleteUser.Controls.Add(this.pictureBox3);
             this.tabPageDeleteUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -416,6 +423,71 @@
             this.tabPageDeleteUser.Size = new System.Drawing.Size(999, 694);
             this.tabPageDeleteUser.TabIndex = 2;
             this.tabPageDeleteUser.Text = "Delete User";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnSearchbyUsernameDelete);
+            this.groupBox3.Controls.Add(this.btnDeleteAccount);
+            this.groupBox3.Controls.Add(this.label15);
+            this.groupBox3.Controls.Add(this.txtSearchbyUsernameDelete);
+            this.groupBox3.Location = new System.Drawing.Point(120, 226);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(761, 334);
+            this.groupBox3.TabIndex = 39;
+            this.groupBox3.TabStop = false;
+            // 
+            // btnSearchbyUsernameDelete
+            // 
+            this.btnSearchbyUsernameDelete.BackColor = System.Drawing.Color.Orange;
+            this.btnSearchbyUsernameDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchbyUsernameDelete.Location = new System.Drawing.Point(514, 121);
+            this.btnSearchbyUsernameDelete.Name = "btnSearchbyUsernameDelete";
+            this.btnSearchbyUsernameDelete.Size = new System.Drawing.Size(157, 41);
+            this.btnSearchbyUsernameDelete.TabIndex = 21;
+            this.btnSearchbyUsernameDelete.Text = "Search";
+            this.btnSearchbyUsernameDelete.UseVisualStyleBackColor = false;
+            // 
+            // btnDeleteAccount
+            // 
+            this.btnDeleteAccount.BackColor = System.Drawing.Color.Crimson;
+            this.btnDeleteAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteAccount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDeleteAccount.Location = new System.Drawing.Point(206, 235);
+            this.btnDeleteAccount.Name = "btnDeleteAccount";
+            this.btnDeleteAccount.Size = new System.Drawing.Size(349, 67);
+            this.btnDeleteAccount.TabIndex = 20;
+            this.btnDeleteAccount.Text = "Delete Account";
+            this.btnDeleteAccount.UseVisualStyleBackColor = false;
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label15.Location = new System.Drawing.Point(88, 62);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(298, 40);
+            this.label15.TabIndex = 19;
+            this.label15.Text = "Search by Username:";
+            // 
+            // txtSearchbyUsernameDelete
+            // 
+            this.txtSearchbyUsernameDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.txtSearchbyUsernameDelete.Location = new System.Drawing.Point(93, 124);
+            this.txtSearchbyUsernameDelete.Name = "txtSearchbyUsernameDelete";
+            this.txtSearchbyUsernameDelete.Size = new System.Drawing.Size(406, 35);
+            this.txtSearchbyUsernameDelete.TabIndex = 17;
+            // 
+            // btnBack3
+            // 
+            this.btnBack3.BackColor = System.Drawing.Color.Crimson;
+            this.btnBack3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBack3.Location = new System.Drawing.Point(811, 628);
+            this.btnBack3.Name = "btnBack3";
+            this.btnBack3.Size = new System.Drawing.Size(156, 41);
+            this.btnBack3.TabIndex = 35;
+            this.btnBack3.Text = "Back";
+            this.btnBack3.UseVisualStyleBackColor = false;
             // 
             // label11
             // 
@@ -442,15 +514,27 @@
             // tabPageViewAccountsList
             // 
             this.tabPageViewAccountsList.BackColor = System.Drawing.Color.YellowGreen;
-            this.tabPageViewAccountsList.Controls.Add(this.button5);
+            this.tabPageViewAccountsList.Controls.Add(this.btnBack4);
             this.tabPageViewAccountsList.Controls.Add(this.btnExport);
-            this.tabPageViewAccountsList.Controls.Add(this.dataGridView1);
+            this.tabPageViewAccountsList.Controls.Add(this.dataGridViewAccountsList);
             this.tabPageViewAccountsList.Location = new System.Drawing.Point(4, 34);
             this.tabPageViewAccountsList.Name = "tabPageViewAccountsList";
             this.tabPageViewAccountsList.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageViewAccountsList.Size = new System.Drawing.Size(999, 694);
             this.tabPageViewAccountsList.TabIndex = 3;
             this.tabPageViewAccountsList.Text = "View Accounts List";
+            // 
+            // btnBack4
+            // 
+            this.btnBack4.BackColor = System.Drawing.Color.Crimson;
+            this.btnBack4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBack4.Location = new System.Drawing.Point(815, 629);
+            this.btnBack4.Name = "btnBack4";
+            this.btnBack4.Size = new System.Drawing.Size(156, 41);
+            this.btnBack4.TabIndex = 36;
+            this.btnBack4.Text = "Back";
+            this.btnBack4.UseVisualStyleBackColor = false;
             // 
             // btnExport
             // 
@@ -463,92 +547,53 @@
             this.btnExport.Text = "Export to MS Excel";
             this.btnExport.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // dataGridViewAccountsList
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 28);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(947, 479);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridViewAccountsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewAccountsList.Location = new System.Drawing.Point(25, 28);
+            this.dataGridViewAccountsList.Name = "dataGridViewAccountsList";
+            this.dataGridViewAccountsList.RowHeadersWidth = 62;
+            this.dataGridViewAccountsList.RowTemplate.Height = 28;
+            this.dataGridViewAccountsList.Size = new System.Drawing.Size(947, 479);
+            this.dataGridViewAccountsList.TabIndex = 0;
             // 
-            // button3
+            // comboBoxRole
             // 
-            this.button3.BackColor = System.Drawing.Color.Crimson;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(811, 628);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(156, 41);
-            this.button3.TabIndex = 35;
-            this.button3.Text = "Back";
-            this.button3.UseVisualStyleBackColor = false;
+            this.comboBoxRole.FormattingEnabled = true;
+            this.comboBoxRole.Location = new System.Drawing.Point(284, 192);
+            this.comboBoxRole.Name = "comboBoxRole";
+            this.comboBoxRole.Size = new System.Drawing.Size(392, 37);
+            this.comboBoxRole.TabIndex = 32;
             // 
-            // button5
+            // label7
             // 
-            this.button5.BackColor = System.Drawing.Color.Crimson;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Location = new System.Drawing.Point(815, 629);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(156, 41);
-            this.button5.TabIndex = 36;
-            this.button5.Text = "Back";
-            this.button5.UseVisualStyleBackColor = false;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.Location = new System.Drawing.Point(85, 192);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(75, 29);
+            this.label7.TabIndex = 33;
+            this.label7.Text = "Role:";
             // 
-            // groupBox3
+            // comboBoxRoleUpdate
             // 
-            this.groupBox3.Controls.Add(this.button4);
-            this.groupBox3.Controls.Add(this.btnDeleteAccount);
-            this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.textBox8);
-            this.groupBox3.Location = new System.Drawing.Point(120, 226);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(761, 334);
-            this.groupBox3.TabIndex = 39;
-            this.groupBox3.TabStop = false;
+            this.comboBoxRoleUpdate.FormattingEnabled = true;
+            this.comboBoxRoleUpdate.Location = new System.Drawing.Point(220, 243);
+            this.comboBoxRoleUpdate.Name = "comboBoxRoleUpdate";
+            this.comboBoxRoleUpdate.Size = new System.Drawing.Size(392, 37);
+            this.comboBoxRoleUpdate.TabIndex = 37;
             // 
-            // button4
+            // label8
             // 
-            this.button4.BackColor = System.Drawing.Color.Orange;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(514, 121);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(157, 41);
-            this.button4.TabIndex = 21;
-            this.button4.Text = "Search";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // btnDeleteAccount
-            // 
-            this.btnDeleteAccount.BackColor = System.Drawing.Color.Crimson;
-            this.btnDeleteAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteAccount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDeleteAccount.Location = new System.Drawing.Point(206, 235);
-            this.btnDeleteAccount.Name = "btnDeleteAccount";
-            this.btnDeleteAccount.Size = new System.Drawing.Size(349, 67);
-            this.btnDeleteAccount.TabIndex = 20;
-            this.btnDeleteAccount.Text = "Delete Account";
-            this.btnDeleteAccount.UseVisualStyleBackColor = false;
-            // 
-            // label15
-            // 
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label15.Location = new System.Drawing.Point(88, 62);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(298, 40);
-            this.label15.TabIndex = 19;
-            this.label15.Text = "Search by Username:";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox8.Location = new System.Drawing.Point(93, 124);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(406, 35);
-            this.textBox8.TabIndex = 17;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label8.Location = new System.Drawing.Point(43, 246);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(75, 29);
+            this.label8.TabIndex = 38;
+            this.label8.Text = "Role:";
             // 
             // frmUserManagement
             // 
@@ -559,7 +604,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmUserManagement";
             this.Text = "User Management";
-            this.Load += new System.EventHandler(this.frmUserManager_Load);
             this.tabControlUserManager.ResumeLayout(false);
             this.tabPageAddUser.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -570,11 +614,11 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPageDeleteUser.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.tabPageViewAccountsList.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.tabPageViewAccountsList.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAccountsList)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -586,41 +630,45 @@
         private System.Windows.Forms.TabPage tabPageUpdateUser;
         private System.Windows.Forms.TabPage tabPageDeleteUser;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Button btnSaveAccount;
-        private System.Windows.Forms.Button btnSearchUser;
+        private System.Windows.Forms.Button btnSearchbyUsernameUpdate;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TabPage tabPageViewAccountsList;
         private System.Windows.Forms.Button btnExport;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewAccountsList;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtSearchbyUsernameUpdate;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btnUpdateUser;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox txtEmailUpdate;
+        private System.Windows.Forms.TextBox txtPasswordUpdate;
+        private System.Windows.Forms.TextBox txtUsernameUpdate;
+        private System.Windows.Forms.Button btnBack2;
+        private System.Windows.Forms.Button btnBack3;
+        private System.Windows.Forms.Button btnBack4;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnSearchbyUsernameDelete;
         private System.Windows.Forms.Button btnDeleteAccount;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtSearchbyUsernameDelete;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBoxRole;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox comboBoxRoleUpdate;
     }
 }

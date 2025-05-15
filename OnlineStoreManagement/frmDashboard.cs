@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using OnlineStoreManagement;
 
 namespace OnlineStoreManagement
 {
@@ -29,7 +30,13 @@ namespace OnlineStoreManagement
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+            // Role-based access control: disable restricted features for Staff
+            if (CurrentUser.RoleName == "Staff")
+            {
+                btnUserManagement.Enabled = false;
+                btnPaymentManagement.Enabled = false;
+                btnReviewManagement.Enabled = false;
+            }
         }
 
         private void lblTitle_Click(object sender, EventArgs e)
@@ -59,11 +66,6 @@ namespace OnlineStoreManagement
         {
             frmUserManagement userManagementForm = new frmUserManagement();
             userManagementForm.Show();
-        }
-
-        private void btnReportsManagement_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnPaymentManagement_Click(object sender, EventArgs e)
