@@ -39,7 +39,7 @@ namespace OnlineStoreManagement
                     if (dgv != null)
                         dgv.DataSource = dt;
                 }
-                catch (MySqlException ex)
+                catch (MySqlException)
                 {
                     MessageBox.Show("Unable to connect to the database. Please try again later.", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -148,7 +148,7 @@ namespace OnlineStoreManagement
                     LoadCustomers();
                     ClearFields();
                 }
-                catch (MySqlException ex)
+                catch (MySqlException)
                 {
                     MessageBox.Show("Unable to add customer. Please check your input or try again later.", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -237,7 +237,7 @@ namespace OnlineStoreManagement
                     LoadCustomers();
                     ClearFields();
                 }
-                catch (MySqlException ex)
+                catch (MySqlException)
                 {
                     MessageBox.Show("Unable to update customer. Please check your input or try again later.", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -438,6 +438,12 @@ namespace OnlineStoreManagement
             // Delete Customer tab
             txtDeleteSearchByName.Text = "";
             txtDeleteSearchByName.Tag = null;
+        }
+
+        private void btnBack3_Click_1(object sender, EventArgs e)
+        {
+
+            this.Close();
         }
     }
 }

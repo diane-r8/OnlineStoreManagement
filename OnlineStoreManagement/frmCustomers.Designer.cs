@@ -462,9 +462,9 @@
             // 
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(94, 31);
+            this.label12.Location = new System.Drawing.Point(94, 23);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(174, 59);
+            this.label12.Size = new System.Drawing.Size(174, 75);
             this.label12.TabIndex = 28;
             this.label12.Text = "Search by Name:";
             // 
@@ -573,6 +573,7 @@
             this.btnBack3.TabIndex = 35;
             this.btnBack3.Text = "Back";
             this.btnBack3.UseVisualStyleBackColor = false;
+            this.btnBack3.Click += new System.EventHandler(this.btnBack3_Click_1);
             // 
             // label11
             // 
