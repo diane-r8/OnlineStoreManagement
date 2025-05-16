@@ -81,6 +81,7 @@
             this.btnBackToLogin.TabIndex = 4;
             this.btnBackToLogin.Text = "Back to Login";
             this.btnBackToLogin.UseVisualStyleBackColor = false;
+            this.btnBackToLogin.Click += new System.EventHandler(this.btnBackToLogin_Click);
             // 
             // btnSubmit
             // 
@@ -93,6 +94,7 @@
             this.btnSubmit.TabIndex = 3;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // pictureBox1
             // 

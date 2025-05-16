@@ -15,8 +15,9 @@ namespace OnlineStoreManagement
         public frmDashboard()
         {
             InitializeComponent();
+            // Set up event handler for lnkLogout (already placed in Designer)
+            lnkLogout.LinkClicked += lnkLogout_LinkClicked;
         }
-
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -30,6 +31,8 @@ namespace OnlineStoreManagement
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            // Set the logged-in user label (already placed in Designer)
+            lblLoggedInAs.Text = $"Logged in as: {CurrentUser.Username}";
             // Role-based access control: disable restricted features for Staff
             if (CurrentUser.RoleName == "Staff")
             {
@@ -83,6 +86,15 @@ namespace OnlineStoreManagement
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void lnkLogout_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            CurrentUser.Username = null;
+            CurrentUser.RoleName = null;
+            CurrentUser.RoleId = 0;
+            new frmLogin().Show();
+            this.Close();
         }
     }
 }

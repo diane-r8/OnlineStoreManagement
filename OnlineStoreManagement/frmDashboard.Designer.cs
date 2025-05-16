@@ -45,8 +45,10 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnUserManagement = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnExit = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.lnkLogout = new System.Windows.Forms.LinkLabel();
+            this.lblLoggedInAs = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -96,7 +98,7 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(54, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(41, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(178, 182);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -125,7 +127,7 @@
             this.lblTitle.BackColor = System.Drawing.Color.DimGray;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(238, 42);
+            this.lblTitle.Location = new System.Drawing.Point(238, 26);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(720, 66);
             this.lblTitle.TabIndex = 1;
@@ -165,6 +167,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.YellowGreen;
+            this.panel1.Controls.Add(this.lblLoggedInAs);
+            this.panel1.Controls.Add(this.lnkLogout);
             this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Controls.Add(this.pictureBox9);
@@ -269,11 +273,20 @@
             this.label1.BackColor = System.Drawing.Color.Gray;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(238, 119);
+            this.label1.Location = new System.Drawing.Point(238, 103);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(330, 53);
+            this.label1.Size = new System.Drawing.Size(720, 53);
             this.label1.TabIndex = 12;
             this.label1.Text = "Dashboard";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnExit);
+            this.groupBox1.Location = new System.Drawing.Point(12, 213);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(978, 495);
+            this.groupBox1.TabIndex = 23;
+            this.groupBox1.TabStop = false;
             // 
             // btnExit
             // 
@@ -290,14 +303,29 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // groupBox1
+            // lnkLogout
             // 
-            this.groupBox1.Controls.Add(this.btnExit);
-            this.groupBox1.Location = new System.Drawing.Point(12, 213);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(978, 495);
-            this.groupBox1.TabIndex = 23;
-            this.groupBox1.TabStop = false;
+            this.lnkLogout.ActiveLinkColor = System.Drawing.Color.White;
+            this.lnkLogout.AutoSize = true;
+            this.lnkLogout.BackColor = System.Drawing.Color.Crimson;
+            this.lnkLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkLogout.LinkColor = System.Drawing.Color.White;
+            this.lnkLogout.Location = new System.Drawing.Point(888, 181);
+            this.lnkLogout.Name = "lnkLogout";
+            this.lnkLogout.Size = new System.Drawing.Size(93, 29);
+            this.lnkLogout.TabIndex = 24;
+            this.lnkLogout.TabStop = true;
+            this.lnkLogout.Text = "Logout";
+            // 
+            // lblLoggedInAs
+            // 
+            this.lblLoggedInAs.BackColor = System.Drawing.Color.DarkOrange;
+            this.lblLoggedInAs.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoggedInAs.Location = new System.Drawing.Point(596, 181);
+            this.lblLoggedInAs.Name = "lblLoggedInAs";
+            this.lblLoggedInAs.Size = new System.Drawing.Size(271, 29);
+            this.lblLoggedInAs.TabIndex = 25;
+            this.lblLoggedInAs.Text = "Logged in as:";
             // 
             // frmDashboard
             // 
@@ -312,6 +340,7 @@
             this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -342,5 +371,7 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lblLoggedInAs;
+        private System.Windows.Forms.LinkLabel lnkLogout;
     }
 }
