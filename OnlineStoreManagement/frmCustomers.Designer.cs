@@ -627,7 +627,7 @@
             // 
             this.btnExportCustomersList.BackColor = System.Drawing.Color.Orange;
             this.btnExportCustomersList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.btnExportCustomersList.Location = new System.Drawing.Point(215, 524);
+            this.btnExportCustomersList.Location = new System.Drawing.Point(215, 541);
             this.btnExportCustomersList.Name = "btnExportCustomersList";
             this.btnExportCustomersList.Size = new System.Drawing.Size(580, 75);
             this.btnExportCustomersList.TabIndex = 1;
@@ -638,11 +638,11 @@
             // dataGridViewCustomersList
             // 
             this.dataGridViewCustomersList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCustomersList.Location = new System.Drawing.Point(25, 28);
+            this.dataGridViewCustomersList.Location = new System.Drawing.Point(24, 128);
             this.dataGridViewCustomersList.Name = "dataGridViewCustomersList";
             this.dataGridViewCustomersList.RowHeadersWidth = 62;
             this.dataGridViewCustomersList.RowTemplate.Height = 28;
-            this.dataGridViewCustomersList.Size = new System.Drawing.Size(947, 479);
+            this.dataGridViewCustomersList.Size = new System.Drawing.Size(947, 407);
             this.dataGridViewCustomersList.TabIndex = 0;
             // 
             // frmCustomers
