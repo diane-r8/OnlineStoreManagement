@@ -75,6 +75,12 @@
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabPageViewAccountsList = new System.Windows.Forms.TabPage();
+            this.txtCustomerAddressFilter = new System.Windows.Forms.TextBox();
+            this.btnResetSearchFilter = new System.Windows.Forms.Button();
+            this.btnSearchFilter = new System.Windows.Forms.Button();
+            this.txtCustomerSearch = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.btnBack4 = new System.Windows.Forms.Button();
             this.btnExportCustomersList = new System.Windows.Forms.Button();
             this.dataGridViewCustomersList = new System.Windows.Forms.DataGridView();
@@ -600,6 +606,12 @@
             // tabPageViewAccountsList
             // 
             this.tabPageViewAccountsList.BackColor = System.Drawing.Color.YellowGreen;
+            this.tabPageViewAccountsList.Controls.Add(this.txtCustomerAddressFilter);
+            this.tabPageViewAccountsList.Controls.Add(this.btnResetSearchFilter);
+            this.tabPageViewAccountsList.Controls.Add(this.btnSearchFilter);
+            this.tabPageViewAccountsList.Controls.Add(this.txtCustomerSearch);
+            this.tabPageViewAccountsList.Controls.Add(this.label17);
+            this.tabPageViewAccountsList.Controls.Add(this.label16);
             this.tabPageViewAccountsList.Controls.Add(this.btnBack4);
             this.tabPageViewAccountsList.Controls.Add(this.btnExportCustomersList);
             this.tabPageViewAccountsList.Controls.Add(this.dataGridViewCustomersList);
@@ -609,6 +621,67 @@
             this.tabPageViewAccountsList.Size = new System.Drawing.Size(999, 694);
             this.tabPageViewAccountsList.TabIndex = 3;
             this.tabPageViewAccountsList.Text = "View Customers List";
+            this.tabPageViewAccountsList.Click += new System.EventHandler(this.tabPageViewAccountsList_Click);
+            // 
+            // txtCustomerAddressFilter
+            // 
+            this.txtCustomerAddressFilter.Location = new System.Drawing.Point(420, 70);
+            this.txtCustomerAddressFilter.Name = "txtCustomerAddressFilter";
+            this.txtCustomerAddressFilter.Size = new System.Drawing.Size(325, 30);
+            this.txtCustomerAddressFilter.TabIndex = 52;
+            this.txtCustomerAddressFilter.TextChanged += new System.EventHandler(this.txtCustomerAddressFilter_TextChanged);
+            // 
+            // btnResetSearchFilter
+            // 
+            this.btnResetSearchFilter.BackColor = System.Drawing.Color.Crimson;
+            this.btnResetSearchFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.btnResetSearchFilter.Location = new System.Drawing.Point(814, 70);
+            this.btnResetSearchFilter.Name = "btnResetSearchFilter";
+            this.btnResetSearchFilter.Size = new System.Drawing.Size(157, 41);
+            this.btnResetSearchFilter.TabIndex = 51;
+            this.btnResetSearchFilter.Text = "Reset";
+            this.btnResetSearchFilter.UseVisualStyleBackColor = false;
+            this.btnResetSearchFilter.Click += new System.EventHandler(this.btnResetSearchFilter_Click);
+            // 
+            // btnSearchFilter
+            // 
+            this.btnSearchFilter.BackColor = System.Drawing.Color.Orange;
+            this.btnSearchFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchFilter.Location = new System.Drawing.Point(814, 19);
+            this.btnSearchFilter.Name = "btnSearchFilter";
+            this.btnSearchFilter.Size = new System.Drawing.Size(157, 41);
+            this.btnSearchFilter.TabIndex = 50;
+            this.btnSearchFilter.Text = "Search";
+            this.btnSearchFilter.UseVisualStyleBackColor = false;
+            this.btnSearchFilter.Click += new System.EventHandler(this.btnSearchFilter_Click);
+            // 
+            // txtCustomerSearch
+            // 
+            this.txtCustomerSearch.Location = new System.Drawing.Point(24, 73);
+            this.txtCustomerSearch.Name = "txtCustomerSearch";
+            this.txtCustomerSearch.Size = new System.Drawing.Size(325, 30);
+            this.txtCustomerSearch.TabIndex = 47;
+            this.txtCustomerSearch.TextChanged += new System.EventHandler(this.txtCustomerSearch_TextChanged);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(415, 35);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(99, 25);
+            this.label17.TabIndex = 46;
+            this.label17.Text = "Address:";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(19, 35);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(239, 25);
+            this.label16.TabIndex = 45;
+            this.label16.Text = "Search by Name/Email:";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // btnBack4
             // 
@@ -669,6 +742,7 @@
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabPageViewAccountsList.ResumeLayout(false);
+            this.tabPageViewAccountsList.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomersList)).EndInit();
             this.ResumeLayout(false);
 
@@ -725,5 +799,11 @@
         private System.Windows.Forms.TextBox txtUpdateLastName;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txtUpdateFirstName;
+        private System.Windows.Forms.TextBox txtCustomerSearch;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button btnResetSearchFilter;
+        private System.Windows.Forms.Button btnSearchFilter;
+        private System.Windows.Forms.TextBox txtCustomerAddressFilter;
     }
 }

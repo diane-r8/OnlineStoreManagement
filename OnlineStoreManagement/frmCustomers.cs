@@ -17,6 +17,9 @@ namespace OnlineStoreManagement
         {
             InitializeComponent();
             tabControlUserManager.SelectedIndexChanged += tabControlUserManager_SelectedIndexChanged;
+            // Wire up search/filter and reset buttons (address filter)
+            btnSearchFilter.Click += btnSearchFilter_Click;
+            btnResetSearchFilter.Click += btnResetSearchFilter_Click;
         }
 
         private void frmCustomers_Load(object sender, EventArgs e)
@@ -444,6 +447,71 @@ namespace OnlineStoreManagement
         {
 
             this.Close();
+        }
+
+        private void btnSearchFilter_Click(object sender, EventArgs e)
+        {
+            string search = txtCustomerSearch.Text.Trim();
+            string address = txtCustomerAddressFilter.Text.Trim();
+
+            using (var conn = DBConnection.GetConnection())
+            {
+                conn.Open();
+                var query = new StringBuilder("SELECT customer_id, first_name, last_name, email, phone, address FROM customers WHERE 1=1");
+                if (!string.IsNullOrWhiteSpace(search))
+                    query.Append(" AND (first_name LIKE @search OR last_name LIKE @search OR email LIKE @search)");
+                if (!string.IsNullOrWhiteSpace(address))
+                    query.Append(" AND address LIKE @address");
+
+                using (var cmd = new MySqlCommand(query.ToString(), conn))
+                {
+                    if (!string.IsNullOrWhiteSpace(search))
+                        cmd.Parameters.AddWithValue("@search", "%" + search + "%");
+                    if (!string.IsNullOrWhiteSpace(address))
+                        cmd.Parameters.AddWithValue("@address", "%" + address + "%");
+
+                    using (var adapter = new MySqlDataAdapter(cmd))
+                    {
+                        DataTable dt = new DataTable();
+                        adapter.Fill(dt);
+                        var dgv = this.Controls.Find("dataGridViewCustomersList", true).FirstOrDefault() as DataGridView;
+                        if (dgv != null)
+                            dgv.DataSource = dt;
+                    }
+                }
+            }
+        }
+
+        private void btnResetSearchFilter_Click(object sender, EventArgs e)
+        {
+            txtCustomerSearch.Text = "";
+            txtCustomerAddressFilter.Text = "";
+            LoadCustomers();
+        }
+
+        private void tabPageViewAccountsList_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCustomerSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCustomerAddressFilter_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

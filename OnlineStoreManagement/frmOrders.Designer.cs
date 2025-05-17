@@ -82,6 +82,14 @@
             this.btnBack4 = new System.Windows.Forms.Button();
             this.btnExport = new System.Windows.Forms.Button();
             this.dataGridViewOrderList = new System.Windows.Forms.DataGridView();
+            this.btnResetSearchFilter = new System.Windows.Forms.Button();
+            this.btnSearchFilter = new System.Windows.Forms.Button();
+            this.txtOrderSearch = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.comboBoxOrderStatus = new System.Windows.Forms.ComboBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.dateTimePickerOrderMonth = new System.Windows.Forms.DateTimePicker();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -669,6 +677,14 @@
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.YellowGreen;
+            this.tabPage4.Controls.Add(this.dateTimePickerOrderMonth);
+            this.tabPage4.Controls.Add(this.label20);
+            this.tabPage4.Controls.Add(this.comboBoxOrderStatus);
+            this.tabPage4.Controls.Add(this.btnResetSearchFilter);
+            this.tabPage4.Controls.Add(this.btnSearchFilter);
+            this.tabPage4.Controls.Add(this.txtOrderSearch);
+            this.tabPage4.Controls.Add(this.label18);
+            this.tabPage4.Controls.Add(this.label19);
             this.tabPage4.Controls.Add(this.btnBack4);
             this.tabPage4.Controls.Add(this.btnExport);
             this.tabPage4.Controls.Add(this.dataGridViewOrderList);
@@ -695,7 +711,7 @@
             // 
             this.btnExport.BackColor = System.Drawing.Color.Orange;
             this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.btnExport.Location = new System.Drawing.Point(211, 520);
+            this.btnExport.Location = new System.Drawing.Point(215, 531);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(580, 75);
             this.btnExport.TabIndex = 38;
@@ -705,12 +721,90 @@
             // dataGridViewOrderList
             // 
             this.dataGridViewOrderList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewOrderList.Location = new System.Drawing.Point(21, 24);
+            this.dataGridViewOrderList.Location = new System.Drawing.Point(20, 140);
             this.dataGridViewOrderList.Name = "dataGridViewOrderList";
             this.dataGridViewOrderList.RowHeadersWidth = 62;
             this.dataGridViewOrderList.RowTemplate.Height = 28;
-            this.dataGridViewOrderList.Size = new System.Drawing.Size(947, 479);
+            this.dataGridViewOrderList.Size = new System.Drawing.Size(947, 385);
             this.dataGridViewOrderList.TabIndex = 37;
+            // 
+            // btnResetSearchFilter
+            // 
+            this.btnResetSearchFilter.BackColor = System.Drawing.Color.Crimson;
+            this.btnResetSearchFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.btnResetSearchFilter.Location = new System.Drawing.Point(810, 78);
+            this.btnResetSearchFilter.Name = "btnResetSearchFilter";
+            this.btnResetSearchFilter.Size = new System.Drawing.Size(157, 41);
+            this.btnResetSearchFilter.TabIndex = 57;
+            this.btnResetSearchFilter.Text = "Reset";
+            this.btnResetSearchFilter.UseVisualStyleBackColor = false;
+            this.btnResetSearchFilter.Click += new System.EventHandler(this.btnResetSearchFilter_Click_1);
+            // 
+            // btnSearchFilter
+            // 
+            this.btnSearchFilter.BackColor = System.Drawing.Color.Orange;
+            this.btnSearchFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchFilter.Location = new System.Drawing.Point(810, 27);
+            this.btnSearchFilter.Name = "btnSearchFilter";
+            this.btnSearchFilter.Size = new System.Drawing.Size(157, 41);
+            this.btnSearchFilter.TabIndex = 56;
+            this.btnSearchFilter.Text = "Search";
+            this.btnSearchFilter.UseVisualStyleBackColor = false;
+            this.btnSearchFilter.Click += new System.EventHandler(this.btnSearchFilter_Click_1);
+            // 
+            // txtOrderSearch
+            // 
+            this.txtOrderSearch.Location = new System.Drawing.Point(20, 81);
+            this.txtOrderSearch.Name = "txtOrderSearch";
+            this.txtOrderSearch.Size = new System.Drawing.Size(292, 30);
+            this.txtOrderSearch.TabIndex = 55;
+            this.txtOrderSearch.TextChanged += new System.EventHandler(this.txtOrderSearch_TextChanged_1);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(330, 43);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(81, 25);
+            this.label18.TabIndex = 54;
+            this.label18.Text = "Status:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(15, 43);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(297, 25);
+            this.label19.TabIndex = 53;
+            this.label19.Text = "Search by Customer/Product:";
+            // 
+            // comboBoxOrderStatus
+            // 
+            this.comboBoxOrderStatus.FormattingEnabled = true;
+            this.comboBoxOrderStatus.Location = new System.Drawing.Point(335, 78);
+            this.comboBoxOrderStatus.Name = "comboBoxOrderStatus";
+            this.comboBoxOrderStatus.Size = new System.Drawing.Size(202, 33);
+            this.comboBoxOrderStatus.TabIndex = 58;
+            this.comboBoxOrderStatus.SelectedIndexChanged += new System.EventHandler(this.comboBoxOrderStatus_SelectedIndexChanged);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(555, 43);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(125, 25);
+            this.label20.TabIndex = 61;
+            this.label20.Text = "Order Date:";
+            // 
+            // dateTimePickerOrderMonth
+            // 
+            this.dateTimePickerOrderMonth.CustomFormat = "MMMM yyyy";
+            this.dateTimePickerOrderMonth.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerOrderMonth.Location = new System.Drawing.Point(560, 81);
+            this.dateTimePickerOrderMonth.Name = "dateTimePickerOrderMonth";
+            this.dateTimePickerOrderMonth.Size = new System.Drawing.Size(219, 30);
+            this.dateTimePickerOrderMonth.TabIndex = 62;
+            this.dateTimePickerOrderMonth.ValueChanged += new System.EventHandler(this.dateTimePickerOrderMonth_ValueChanged);
             // 
             // frmOrders
             // 
@@ -739,6 +833,7 @@
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOrderList)).EndInit();
             this.ResumeLayout(false);
 
@@ -799,5 +894,13 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox comboBoxStatusUpdate;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.ComboBox comboBoxOrderStatus;
+        private System.Windows.Forms.Button btnResetSearchFilter;
+        private System.Windows.Forms.Button btnSearchFilter;
+        private System.Windows.Forms.TextBox txtOrderSearch;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.DateTimePicker dateTimePickerOrderMonth;
     }
 }

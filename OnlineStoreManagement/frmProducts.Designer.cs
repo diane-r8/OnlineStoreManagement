@@ -77,6 +77,9 @@ namespace OnlineStoreManagement
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.btnResetSearchFilter = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
+            this.numericUpDownMaxPrice = new System.Windows.Forms.NumericUpDown();
             this.btnSearchFilter = new System.Windows.Forms.Button();
             this.numericUpDownMinPrice = new System.Windows.Forms.NumericUpDown();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -90,9 +93,6 @@ namespace OnlineStoreManagement
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnGoToCategories = new System.Windows.Forms.Button();
-            this.numericUpDownMaxPrice = new System.Windows.Forms.NumericUpDown();
-            this.label19 = new System.Windows.Forms.Label();
-            this.btnResetSearchFilter = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -108,11 +108,11 @@ namespace OnlineStoreManagement
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxPrice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinPrice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductsList)).BeginInit();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxPrice)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -669,11 +669,43 @@ namespace OnlineStoreManagement
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = " View Products List";
             // 
+            // btnResetSearchFilter
+            // 
+            this.btnResetSearchFilter.BackColor = System.Drawing.Color.Crimson;
+            this.btnResetSearchFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.btnResetSearchFilter.Location = new System.Drawing.Point(811, 80);
+            this.btnResetSearchFilter.Name = "btnResetSearchFilter";
+            this.btnResetSearchFilter.Size = new System.Drawing.Size(157, 41);
+            this.btnResetSearchFilter.TabIndex = 49;
+            this.btnResetSearchFilter.Text = "Reset";
+            this.btnResetSearchFilter.UseVisualStyleBackColor = false;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(655, 45);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(121, 25);
+            this.label19.TabIndex = 48;
+            this.label19.Text = "Max. Price:";
+            // 
+            // numericUpDownMaxPrice
+            // 
+            this.numericUpDownMaxPrice.Location = new System.Drawing.Point(656, 80);
+            this.numericUpDownMaxPrice.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.numericUpDownMaxPrice.Name = "numericUpDownMaxPrice";
+            this.numericUpDownMaxPrice.Size = new System.Drawing.Size(120, 30);
+            this.numericUpDownMaxPrice.TabIndex = 47;
+            // 
             // btnSearchFilter
             // 
             this.btnSearchFilter.BackColor = System.Drawing.Color.Orange;
             this.btnSearchFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchFilter.Location = new System.Drawing.Point(801, 29);
+            this.btnSearchFilter.Location = new System.Drawing.Point(811, 29);
             this.btnSearchFilter.Name = "btnSearchFilter";
             this.btnSearchFilter.Size = new System.Drawing.Size(157, 41);
             this.btnSearchFilter.TabIndex = 46;
@@ -802,38 +834,6 @@ namespace OnlineStoreManagement
             this.btnGoToCategories.Text = "Go to Categories Section";
             this.btnGoToCategories.UseVisualStyleBackColor = false;
             // 
-            // numericUpDownMaxPrice
-            // 
-            this.numericUpDownMaxPrice.Location = new System.Drawing.Point(656, 80);
-            this.numericUpDownMaxPrice.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.numericUpDownMaxPrice.Name = "numericUpDownMaxPrice";
-            this.numericUpDownMaxPrice.Size = new System.Drawing.Size(120, 30);
-            this.numericUpDownMaxPrice.TabIndex = 47;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(655, 45);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(121, 25);
-            this.label19.TabIndex = 48;
-            this.label19.Text = "Max. Price:";
-            // 
-            // btnResetSearchFilter
-            // 
-            this.btnResetSearchFilter.BackColor = System.Drawing.Color.Crimson;
-            this.btnResetSearchFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.btnResetSearchFilter.Location = new System.Drawing.Point(801, 80);
-            this.btnResetSearchFilter.Name = "btnResetSearchFilter";
-            this.btnResetSearchFilter.Size = new System.Drawing.Size(157, 41);
-            this.btnResetSearchFilter.TabIndex = 49;
-            this.btnResetSearchFilter.Text = "Reset";
-            this.btnResetSearchFilter.UseVisualStyleBackColor = false;
-            // 
             // frmProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -862,11 +862,11 @@ namespace OnlineStoreManagement
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxPrice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinPrice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductsList)).EndInit();
             this.tabPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxPrice)).EndInit();
             this.ResumeLayout(false);
 
         }

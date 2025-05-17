@@ -33,7 +33,13 @@ namespace OnlineStoreManagement
             btnBack2.Click += btnBack2_Click;
             btnBack3.Click += btnBack3_Click;
             btnBack4.Click += btnBack4_Click;
-            // Add more as needed for other controls (e.g., Back buttons)
+            // Wire up search/filter and reset for View Orders tab
+            btnSearchFilter.Click += btnSearchFilter_Click_1;
+            btnResetSearchFilter.Click += btnResetSearchFilter_Click_1;
+            // Populate order status ComboBox
+            LoadOrderStatuses();
+            // Set sensible default month for search
+            dateTimePickerOrderMonth.Value = DateTime.Today;
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -642,6 +648,113 @@ namespace OnlineStoreManagement
             {
                 numericUpDownTotalAmountUpdate.Value = 0;
             }
+        }
+
+        private void txtOrderSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnResetSearchFilter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearchFilter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtOrderSearch_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxOrderStatus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePickerOrderDateFrom_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePickerOrderDateTo_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearchFilter_Click_1(object sender, EventArgs e)
+        {
+            string search = txtOrderSearch.Text.Trim();
+            string status = comboBoxOrderStatus.SelectedItem?.ToString();
+            DateTime selectedMonth = dateTimePickerOrderMonth.Value;
+            int year = selectedMonth.Year;
+            int month = selectedMonth.Month;
+            using (var conn = DBConnection.GetConnection())
+            {
+                conn.Open();
+                var query = new StringBuilder();
+                query.Append(@"SELECT o.order_id, CONCAT(c.first_name, ' ', c.last_name) AS customer, p.product_name, o.quantity, o.order_date, o.total_amount, o.status FROM orders o JOIN customers c ON o.customer_id = c.customer_id JOIN products p ON o.product_id = p.product_id WHERE 1=1");
+                if (!string.IsNullOrWhiteSpace(search))
+                {
+                    query.Append(" AND (CONCAT(c.first_name, ' ', c.last_name) LIKE @search OR p.product_name LIKE @search)");
+                }
+                if (status != "All")
+                {
+                    query.Append(" AND o.status = @status");
+                }
+                query.Append(" AND YEAR(o.order_date) = @year AND MONTH(o.order_date) = @month");
+                using (var cmd = new MySqlCommand(query.ToString(), conn))
+                {
+                    if (!string.IsNullOrWhiteSpace(search))
+                        cmd.Parameters.AddWithValue("@search", "%" + search + "%");
+                    if (status != "All")
+                        cmd.Parameters.AddWithValue("@status", status);
+                    cmd.Parameters.AddWithValue("@year", year);
+                    cmd.Parameters.AddWithValue("@month", month);
+                    DataTable dt = new DataTable();
+                    using (var adapter = new MySqlDataAdapter(cmd))
+                    {
+                        adapter.Fill(dt);
+                        dataGridViewOrderList.DataSource = dt;
+                    }
+                }
+            }
+        }
+
+        private void btnResetSearchFilter_Click_1(object sender, EventArgs e)
+        {
+            txtOrderSearch.Text = "";
+            comboBoxOrderStatus.SelectedIndex = 0;
+            dateTimePickerOrderMonth.Value = DateTime.Today;
+            LoadOrdersList();
+        }
+
+        private void LoadOrderStatuses()
+        {
+            comboBoxOrderStatus.Items.Clear();
+            comboBoxOrderStatus.Items.Add("All");
+            using (var conn = DBConnection.GetConnection())
+            {
+                conn.Open();
+                string query = "SELECT DISTINCT status FROM orders";
+                using (var cmd = new MySqlCommand(query, conn))
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        comboBoxOrderStatus.Items.Add(reader["status"].ToString());
+                    }
+                }
+            }
+            comboBoxOrderStatus.SelectedIndex = 0;
+        }
+
+        private void dateTimePickerOrderMonth_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
