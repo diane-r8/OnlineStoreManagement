@@ -33,12 +33,15 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxCustomer = new System.Windows.Forms.ComboBox();
+            this.dateTimePickerOrderDate = new System.Windows.Forms.DateTimePicker();
+            this.label11 = new System.Windows.Forms.Label();
+            this.richTextBoxComment = new System.Windows.Forms.RichTextBox();
+            this.btnSaveReview = new System.Windows.Forms.Button();
+            this.comboBoxProduct = new System.Windows.Forms.ComboBox();
+            this.numericUpDownRating = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -46,52 +49,55 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnBack2 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.btnSearchUser = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button6 = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.btnDeleteAccount = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button7 = new System.Windows.Forms.Button();
-            this.btnExport = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label11 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.comboBoxCustomerUpdate = new System.Windows.Forms.ComboBox();
+            this.dateTimePickerOrderDateUpdate = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.richTextBoxCommentUpdate = new System.Windows.Forms.RichTextBox();
+            this.btnUpdateReviewDetails = new System.Windows.Forms.Button();
+            this.comboBoxProductUpdate = new System.Windows.Forms.ComboBox();
+            this.numericUpDownRatingUpdate = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.txtSearchByReviewIDUpdate = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.btnSearchByReviewIDUpdate = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnBack3 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnSearchByReviewIDDelete = new System.Windows.Forms.Button();
+            this.btnDeleteReview = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtSearchByReviewIDDelete = new System.Windows.Forms.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.comboBoxRatingsFilter = new System.Windows.Forms.ComboBox();
+            this.btnResetSearchFilter = new System.Windows.Forms.Button();
+            this.btnSearchFilter = new System.Windows.Forms.Button();
+            this.txtProductSearch = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.btnBack4 = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.dataGridViewReviewsList = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRating)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRatingUpdate)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReviewsList)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -112,7 +118,7 @@
             this.tabPage1.BackColor = System.Drawing.Color.YellowGreen;
             this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.btnBack);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
@@ -144,27 +150,28 @@
             this.label1.Text = "ADD REVIEW";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button2
+            // btnBack
             // 
-            this.button2.BackColor = System.Drawing.Color.Crimson;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(797, 655);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(156, 41);
-            this.button2.TabIndex = 28;
-            this.button2.Text = "Back";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnBack.BackColor = System.Drawing.Color.Crimson;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBack.Location = new System.Drawing.Point(797, 655);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(156, 41);
+            this.btnBack.TabIndex = 28;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox4);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.comboBoxCustomer);
+            this.groupBox1.Controls.Add(this.dateTimePickerOrderDate);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.richTextBox1);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.numericUpDown2);
+            this.groupBox1.Controls.Add(this.richTextBoxComment);
+            this.groupBox1.Controls.Add(this.btnSaveReview);
+            this.groupBox1.Controls.Add(this.comboBoxProduct);
+            this.groupBox1.Controls.Add(this.numericUpDownRating);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label7);
@@ -175,45 +182,80 @@
             this.groupBox1.TabIndex = 29;
             this.groupBox1.TabStop = false;
             // 
-            // richTextBox1
+            // comboBoxCustomer
             // 
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.richTextBox1.Location = new System.Drawing.Point(281, 216);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.richTextBox1.Size = new System.Drawing.Size(392, 138);
-            this.richTextBox1.TabIndex = 29;
-            this.richTextBox1.Text = "";
+            this.comboBoxCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.comboBoxCustomer.FormattingEnabled = true;
+            this.comboBoxCustomer.Location = new System.Drawing.Point(281, 41);
+            this.comboBoxCustomer.Name = "comboBoxCustomer";
+            this.comboBoxCustomer.Size = new System.Drawing.Size(392, 33);
+            this.comboBoxCustomer.TabIndex = 32;
+            this.comboBoxCustomer.SelectedIndexChanged += new System.EventHandler(this.comboBoxCustomer_SelectedIndexChanged);
             // 
-            // button1
+            // dateTimePickerOrderDate
             // 
-            this.button1.BackColor = System.Drawing.Color.Orange;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(215, 451);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(349, 56);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Save Review";
-            this.button1.UseVisualStyleBackColor = false;
+            this.dateTimePickerOrderDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.dateTimePickerOrderDate.Location = new System.Drawing.Point(281, 382);
+            this.dateTimePickerOrderDate.Name = "dateTimePickerOrderDate";
+            this.dateTimePickerOrderDate.Size = new System.Drawing.Size(392, 30);
+            this.dateTimePickerOrderDate.TabIndex = 30;
+            this.dateTimePickerOrderDate.ValueChanged += new System.EventHandler(this.dateTimePickerOrderDate_ValueChanged);
             // 
-            // comboBox1
+            // label11
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(281, 97);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(392, 33);
-            this.comboBox1.TabIndex = 18;
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label11.Location = new System.Drawing.Point(77, 382);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(149, 29);
+            this.label11.TabIndex = 31;
+            this.label11.Text = "Order Date:";
             // 
-            // numericUpDown2
+            // richTextBoxComment
             // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.numericUpDown2.Location = new System.Drawing.Point(281, 159);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(392, 30);
-            this.numericUpDown2.TabIndex = 25;
+            this.richTextBoxComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.richTextBoxComment.Location = new System.Drawing.Point(281, 216);
+            this.richTextBoxComment.Name = "richTextBoxComment";
+            this.richTextBoxComment.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.richTextBoxComment.Size = new System.Drawing.Size(392, 138);
+            this.richTextBoxComment.TabIndex = 29;
+            this.richTextBoxComment.Text = "";
+            this.richTextBoxComment.TextChanged += new System.EventHandler(this.richTextBoxComment_TextChanged);
+            // 
+            // btnSaveReview
+            // 
+            this.btnSaveReview.BackColor = System.Drawing.Color.Orange;
+            this.btnSaveReview.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnSaveReview.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveReview.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSaveReview.Location = new System.Drawing.Point(215, 451);
+            this.btnSaveReview.Name = "btnSaveReview";
+            this.btnSaveReview.Size = new System.Drawing.Size(349, 56);
+            this.btnSaveReview.TabIndex = 27;
+            this.btnSaveReview.Text = "Save Review";
+            this.btnSaveReview.UseVisualStyleBackColor = false;
+            this.btnSaveReview.Click += new System.EventHandler(this.btnSaveReview_Click);
+            // 
+            // comboBoxProduct
+            // 
+            this.comboBoxProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.comboBoxProduct.FormattingEnabled = true;
+            this.comboBoxProduct.Location = new System.Drawing.Point(281, 97);
+            this.comboBoxProduct.Name = "comboBoxProduct";
+            this.comboBoxProduct.Size = new System.Drawing.Size(392, 33);
+            this.comboBoxProduct.TabIndex = 18;
+            this.comboBoxProduct.SelectedIndexChanged += new System.EventHandler(this.comboBoxProduct_SelectedIndexChanged);
+            // 
+            // numericUpDownRating
+            // 
+            this.numericUpDownRating.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.numericUpDownRating.Location = new System.Drawing.Point(281, 159);
+            this.numericUpDownRating.Name = "numericUpDownRating";
+            this.numericUpDownRating.Size = new System.Drawing.Size(392, 30);
+            this.numericUpDownRating.TabIndex = 25;
+            this.numericUpDownRating.ValueChanged += new System.EventHandler(this.numericUpDownRating_ValueChanged);
             // 
             // label10
             // 
@@ -268,7 +310,7 @@
             this.tabPage2.BackColor = System.Drawing.Color.YellowGreen;
             this.tabPage2.Controls.Add(this.pictureBox2);
             this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.button3);
+            this.tabPage2.Controls.Add(this.btnBack2);
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
@@ -299,256 +341,59 @@
             this.label2.Text = "UPDATE REVIEW DETAILS";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button3
+            // btnBack2
             // 
-            this.button3.BackColor = System.Drawing.Color.Crimson;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(806, 652);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(156, 41);
-            this.button3.TabIndex = 32;
-            this.button3.Text = "Back";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnBack2.BackColor = System.Drawing.Color.Crimson;
+            this.btnBack2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBack2.Location = new System.Drawing.Point(806, 652);
+            this.btnBack2.Name = "btnBack2";
+            this.btnBack2.Size = new System.Drawing.Size(156, 41);
+            this.btnBack2.TabIndex = 32;
+            this.btnBack2.Text = "Back";
+            this.btnBack2.UseVisualStyleBackColor = false;
+            this.btnBack2.Click += new System.EventHandler(this.btnBack2_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.comboBox3);
-            this.groupBox2.Controls.Add(this.dateTimePicker2);
+            this.groupBox2.Controls.Add(this.comboBoxCustomerUpdate);
+            this.groupBox2.Controls.Add(this.dateTimePickerOrderDateUpdate);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.richTextBox2);
-            this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.numericUpDown1);
+            this.groupBox2.Controls.Add(this.richTextBoxCommentUpdate);
+            this.groupBox2.Controls.Add(this.btnUpdateReviewDetails);
+            this.groupBox2.Controls.Add(this.comboBoxProductUpdate);
+            this.groupBox2.Controls.Add(this.numericUpDownRatingUpdate);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.textBox9);
+            this.groupBox2.Controls.Add(this.txtSearchByReviewIDUpdate);
             this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.btnSearchUser);
+            this.groupBox2.Controls.Add(this.btnSearchByReviewIDUpdate);
             this.groupBox2.Location = new System.Drawing.Point(112, 88);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(761, 556);
             this.groupBox2.TabIndex = 33;
             this.groupBox2.TabStop = false;
             // 
-            // textBox9
+            // comboBoxCustomerUpdate
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox9.Location = new System.Drawing.Point(269, 34);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(293, 30);
-            this.textBox9.TabIndex = 32;
+            this.comboBoxCustomerUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.comboBoxCustomerUpdate.FormattingEnabled = true;
+            this.comboBoxCustomerUpdate.Location = new System.Drawing.Point(269, 92);
+            this.comboBoxCustomerUpdate.Name = "comboBoxCustomerUpdate";
+            this.comboBoxCustomerUpdate.Size = new System.Drawing.Size(392, 33);
+            this.comboBoxCustomerUpdate.TabIndex = 43;
+            this.comboBoxCustomerUpdate.SelectedIndexChanged += new System.EventHandler(this.comboBoxCustomerUpdate_SelectedIndexChanged);
             // 
-            // label13
+            // dateTimePickerOrderDateUpdate
             // 
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label13.Location = new System.Drawing.Point(65, 31);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(196, 59);
-            this.label13.TabIndex = 31;
-            this.label13.Text = "Search by Product Name:";
-            // 
-            // btnSearchUser
-            // 
-            this.btnSearchUser.BackColor = System.Drawing.Color.Orange;
-            this.btnSearchUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.btnSearchUser.Location = new System.Drawing.Point(568, 29);
-            this.btnSearchUser.Name = "btnSearchUser";
-            this.btnSearchUser.Size = new System.Drawing.Size(133, 41);
-            this.btnSearchUser.TabIndex = 30;
-            this.btnSearchUser.Text = "Search";
-            this.btnSearchUser.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Orange;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(152, 493);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(452, 44);
-            this.button4.TabIndex = 27;
-            this.button4.Text = "Update Review Details";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.YellowGreen;
-            this.tabPage3.Controls.Add(this.button6);
-            this.tabPage3.Controls.Add(this.groupBox3);
-            this.tabPage3.Controls.Add(this.pictureBox3);
-            this.tabPage3.Controls.Add(this.label14);
-            this.tabPage3.Location = new System.Drawing.Point(4, 34);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(997, 715);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Delete Review";
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Crimson;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button6.Location = new System.Drawing.Point(797, 649);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(156, 41);
-            this.button6.TabIndex = 39;
-            this.button6.Text = "Back";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.button5);
-            this.groupBox3.Controls.Add(this.btnDeleteAccount);
-            this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.textBox8);
-            this.groupBox3.Location = new System.Drawing.Point(114, 186);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(761, 388);
-            this.groupBox3.TabIndex = 38;
-            this.groupBox3.TabStop = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Orange;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(514, 130);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(157, 41);
-            this.button5.TabIndex = 21;
-            this.button5.Text = "Search";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // btnDeleteAccount
-            // 
-            this.btnDeleteAccount.BackColor = System.Drawing.Color.Crimson;
-            this.btnDeleteAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteAccount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDeleteAccount.Location = new System.Drawing.Point(207, 269);
-            this.btnDeleteAccount.Name = "btnDeleteAccount";
-            this.btnDeleteAccount.Size = new System.Drawing.Size(349, 67);
-            this.btnDeleteAccount.TabIndex = 20;
-            this.btnDeleteAccount.Text = "Delete Review";
-            this.btnDeleteAccount.UseVisualStyleBackColor = false;
-            // 
-            // label15
-            // 
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label15.Location = new System.Drawing.Point(89, 71);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(330, 40);
-            this.label15.TabIndex = 19;
-            this.label15.Text = "Search by Product Name:";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox8.Location = new System.Drawing.Point(93, 133);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(406, 35);
-            this.textBox8.TabIndex = 17;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(84, 28);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(132, 124);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 37;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label14
-            // 
-            this.label14.BackColor = System.Drawing.Color.DimGray;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label14.Location = new System.Drawing.Point(222, 51);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(653, 69);
-            this.label14.TabIndex = 36;
-            this.label14.Text = "DELETE REVIEW";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.Color.YellowGreen;
-            this.tabPage4.Controls.Add(this.button7);
-            this.tabPage4.Controls.Add(this.btnExport);
-            this.tabPage4.Controls.Add(this.dataGridView1);
-            this.tabPage4.Location = new System.Drawing.Point(4, 34);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(997, 715);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = " View Reviews List";
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.Crimson;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Location = new System.Drawing.Point(807, 647);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(156, 41);
-            this.button7.TabIndex = 39;
-            this.button7.Text = "Back";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // btnExport
-            // 
-            this.btnExport.BackColor = System.Drawing.Color.Orange;
-            this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.btnExport.Location = new System.Drawing.Point(211, 528);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(580, 75);
-            this.btnExport.TabIndex = 38;
-            this.btnExport.Text = "Export to MS Excel";
-            this.btnExport.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(21, 24);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(947, 479);
-            this.dataGridView1.TabIndex = 37;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.dateTimePicker1.Location = new System.Drawing.Point(281, 382);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(392, 30);
-            this.dateTimePicker1.TabIndex = 30;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(77, 382);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(149, 29);
-            this.label11.TabIndex = 31;
-            this.label11.Text = "Order Date:";
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.dateTimePicker2.Location = new System.Drawing.Point(269, 428);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(392, 30);
-            this.dateTimePicker2.TabIndex = 41;
+            this.dateTimePickerOrderDateUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.dateTimePickerOrderDateUpdate.Location = new System.Drawing.Point(269, 428);
+            this.dateTimePickerOrderDateUpdate.Name = "dateTimePickerOrderDateUpdate";
+            this.dateTimePickerOrderDateUpdate.Size = new System.Drawing.Size(392, 30);
+            this.dateTimePickerOrderDateUpdate.TabIndex = 41;
+            this.dateTimePickerOrderDateUpdate.ValueChanged += new System.EventHandler(this.dateTimePickerOrderDateUpdate_ValueChanged);
             // 
             // label3
             // 
@@ -562,32 +407,49 @@
             this.label3.TabIndex = 42;
             this.label3.Text = "Order Date:";
             // 
-            // richTextBox2
+            // richTextBoxCommentUpdate
             // 
-            this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.richTextBox2.Location = new System.Drawing.Point(269, 259);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.richTextBox2.Size = new System.Drawing.Size(392, 138);
-            this.richTextBox2.TabIndex = 40;
-            this.richTextBox2.Text = "";
+            this.richTextBoxCommentUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.richTextBoxCommentUpdate.Location = new System.Drawing.Point(269, 259);
+            this.richTextBoxCommentUpdate.Name = "richTextBoxCommentUpdate";
+            this.richTextBoxCommentUpdate.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.richTextBoxCommentUpdate.Size = new System.Drawing.Size(392, 138);
+            this.richTextBoxCommentUpdate.TabIndex = 40;
+            this.richTextBoxCommentUpdate.Text = "";
+            this.richTextBoxCommentUpdate.TextChanged += new System.EventHandler(this.richTextBoxCommentUpdate_TextChanged);
             // 
-            // comboBox2
+            // btnUpdateReviewDetails
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(269, 148);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(392, 33);
-            this.comboBox2.TabIndex = 33;
+            this.btnUpdateReviewDetails.BackColor = System.Drawing.Color.Orange;
+            this.btnUpdateReviewDetails.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnUpdateReviewDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateReviewDetails.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnUpdateReviewDetails.Location = new System.Drawing.Point(152, 484);
+            this.btnUpdateReviewDetails.Name = "btnUpdateReviewDetails";
+            this.btnUpdateReviewDetails.Size = new System.Drawing.Size(452, 57);
+            this.btnUpdateReviewDetails.TabIndex = 27;
+            this.btnUpdateReviewDetails.Text = "Update Review Details";
+            this.btnUpdateReviewDetails.UseVisualStyleBackColor = false;
+            this.btnUpdateReviewDetails.Click += new System.EventHandler(this.btnUpdateReviewDetails_Click);
             // 
-            // numericUpDown1
+            // comboBoxProductUpdate
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.numericUpDown1.Location = new System.Drawing.Point(269, 205);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(392, 30);
-            this.numericUpDown1.TabIndex = 38;
+            this.comboBoxProductUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.comboBoxProductUpdate.FormattingEnabled = true;
+            this.comboBoxProductUpdate.Location = new System.Drawing.Point(269, 148);
+            this.comboBoxProductUpdate.Name = "comboBoxProductUpdate";
+            this.comboBoxProductUpdate.Size = new System.Drawing.Size(392, 33);
+            this.comboBoxProductUpdate.TabIndex = 33;
+            this.comboBoxProductUpdate.SelectedIndexChanged += new System.EventHandler(this.comboBoxProductUpdate_SelectedIndexChanged);
+            // 
+            // numericUpDownRatingUpdate
+            // 
+            this.numericUpDownRatingUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.numericUpDownRatingUpdate.Location = new System.Drawing.Point(269, 205);
+            this.numericUpDownRatingUpdate.Name = "numericUpDownRatingUpdate";
+            this.numericUpDownRatingUpdate.Size = new System.Drawing.Size(392, 30);
+            this.numericUpDownRatingUpdate.TabIndex = 38;
+            this.numericUpDownRatingUpdate.ValueChanged += new System.EventHandler(this.numericUpDownRatingUpdate_ValueChanged);
             // 
             // label4
             // 
@@ -637,23 +499,254 @@
             this.label12.TabIndex = 36;
             this.label12.Text = "Rating:";
             // 
-            // comboBox3
+            // txtSearchByReviewIDUpdate
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(269, 92);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(392, 33);
-            this.comboBox3.TabIndex = 43;
+            this.txtSearchByReviewIDUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.txtSearchByReviewIDUpdate.Location = new System.Drawing.Point(269, 34);
+            this.txtSearchByReviewIDUpdate.Name = "txtSearchByReviewIDUpdate";
+            this.txtSearchByReviewIDUpdate.Size = new System.Drawing.Size(293, 30);
+            this.txtSearchByReviewIDUpdate.TabIndex = 32;
+            this.txtSearchByReviewIDUpdate.TextChanged += new System.EventHandler(this.txtSearchByProductName_TextChanged);
             // 
-            // comboBox4
+            // label13
             // 
-            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(281, 41);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(392, 33);
-            this.comboBox4.TabIndex = 32;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label13.Location = new System.Drawing.Point(65, 31);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(209, 59);
+            this.label13.TabIndex = 31;
+            this.label13.Text = "Search by Review ID:";
+            // 
+            // btnSearchByReviewIDUpdate
+            // 
+            this.btnSearchByReviewIDUpdate.BackColor = System.Drawing.Color.Orange;
+            this.btnSearchByReviewIDUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.btnSearchByReviewIDUpdate.Location = new System.Drawing.Point(568, 29);
+            this.btnSearchByReviewIDUpdate.Name = "btnSearchByReviewIDUpdate";
+            this.btnSearchByReviewIDUpdate.Size = new System.Drawing.Size(133, 41);
+            this.btnSearchByReviewIDUpdate.TabIndex = 30;
+            this.btnSearchByReviewIDUpdate.Text = "Search";
+            this.btnSearchByReviewIDUpdate.UseVisualStyleBackColor = false;
+            this.btnSearchByReviewIDUpdate.Click += new System.EventHandler(this.btnSearchByProductName_Click);
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.YellowGreen;
+            this.tabPage3.Controls.Add(this.btnBack3);
+            this.tabPage3.Controls.Add(this.groupBox3);
+            this.tabPage3.Controls.Add(this.pictureBox3);
+            this.tabPage3.Controls.Add(this.label14);
+            this.tabPage3.Location = new System.Drawing.Point(4, 34);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(997, 715);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Delete Review";
+            // 
+            // btnBack3
+            // 
+            this.btnBack3.BackColor = System.Drawing.Color.Crimson;
+            this.btnBack3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBack3.Location = new System.Drawing.Point(797, 649);
+            this.btnBack3.Name = "btnBack3";
+            this.btnBack3.Size = new System.Drawing.Size(156, 41);
+            this.btnBack3.TabIndex = 39;
+            this.btnBack3.Text = "Back";
+            this.btnBack3.UseVisualStyleBackColor = false;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnSearchByReviewIDDelete);
+            this.groupBox3.Controls.Add(this.btnDeleteReview);
+            this.groupBox3.Controls.Add(this.label15);
+            this.groupBox3.Controls.Add(this.txtSearchByReviewIDDelete);
+            this.groupBox3.Location = new System.Drawing.Point(114, 186);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(761, 388);
+            this.groupBox3.TabIndex = 38;
+            this.groupBox3.TabStop = false;
+            // 
+            // btnSearchByReviewIDDelete
+            // 
+            this.btnSearchByReviewIDDelete.BackColor = System.Drawing.Color.Orange;
+            this.btnSearchByReviewIDDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchByReviewIDDelete.Location = new System.Drawing.Point(502, 130);
+            this.btnSearchByReviewIDDelete.Name = "btnSearchByReviewIDDelete";
+            this.btnSearchByReviewIDDelete.Size = new System.Drawing.Size(157, 41);
+            this.btnSearchByReviewIDDelete.TabIndex = 21;
+            this.btnSearchByReviewIDDelete.Text = "Search";
+            this.btnSearchByReviewIDDelete.UseVisualStyleBackColor = false;
+            this.btnSearchByReviewIDDelete.Click += new System.EventHandler(this.btnSearchByReviewIDDelete_Click);
+            // 
+            // btnDeleteReview
+            // 
+            this.btnDeleteReview.BackColor = System.Drawing.Color.Crimson;
+            this.btnDeleteReview.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteReview.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDeleteReview.Location = new System.Drawing.Point(207, 269);
+            this.btnDeleteReview.Name = "btnDeleteReview";
+            this.btnDeleteReview.Size = new System.Drawing.Size(349, 67);
+            this.btnDeleteReview.TabIndex = 20;
+            this.btnDeleteReview.Text = "Delete Review";
+            this.btnDeleteReview.UseVisualStyleBackColor = false;
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label15.Location = new System.Drawing.Point(74, 74);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(367, 40);
+            this.label15.TabIndex = 19;
+            this.label15.Text = "Search by Review ID:";
+            // 
+            // txtSearchByReviewIDDelete
+            // 
+            this.txtSearchByReviewIDDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.txtSearchByReviewIDDelete.Location = new System.Drawing.Point(79, 133);
+            this.txtSearchByReviewIDDelete.Name = "txtSearchByReviewIDDelete";
+            this.txtSearchByReviewIDDelete.Size = new System.Drawing.Size(406, 35);
+            this.txtSearchByReviewIDDelete.TabIndex = 17;
+            this.txtSearchByReviewIDDelete.TextChanged += new System.EventHandler(this.txtSearchByReviewIDDelete_TextChanged);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(84, 28);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(132, 124);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 37;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label14
+            // 
+            this.label14.BackColor = System.Drawing.Color.DimGray;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label14.Location = new System.Drawing.Point(222, 51);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(653, 69);
+            this.label14.TabIndex = 36;
+            this.label14.Text = "DELETE REVIEW";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.YellowGreen;
+            this.tabPage4.Controls.Add(this.comboBoxRatingsFilter);
+            this.tabPage4.Controls.Add(this.btnResetSearchFilter);
+            this.tabPage4.Controls.Add(this.btnSearchFilter);
+            this.tabPage4.Controls.Add(this.txtProductSearch);
+            this.tabPage4.Controls.Add(this.label17);
+            this.tabPage4.Controls.Add(this.label16);
+            this.tabPage4.Controls.Add(this.btnBack4);
+            this.tabPage4.Controls.Add(this.btnExport);
+            this.tabPage4.Controls.Add(this.dataGridViewReviewsList);
+            this.tabPage4.Location = new System.Drawing.Point(4, 34);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(997, 715);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = " View Reviews List";
+            // 
+            // comboBoxRatingsFilter
+            // 
+            this.comboBoxRatingsFilter.FormattingEnabled = true;
+            this.comboBoxRatingsFilter.Location = new System.Drawing.Point(418, 81);
+            this.comboBoxRatingsFilter.Name = "comboBoxRatingsFilter";
+            this.comboBoxRatingsFilter.Size = new System.Drawing.Size(190, 33);
+            this.comboBoxRatingsFilter.TabIndex = 58;
+            this.comboBoxRatingsFilter.SelectedIndexChanged += new System.EventHandler(this.comboBoxRatingsFilter_SelectedIndexChanged);
+            // 
+            // btnResetSearchFilter
+            // 
+            this.btnResetSearchFilter.BackColor = System.Drawing.Color.Crimson;
+            this.btnResetSearchFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.btnResetSearchFilter.Location = new System.Drawing.Point(812, 81);
+            this.btnResetSearchFilter.Name = "btnResetSearchFilter";
+            this.btnResetSearchFilter.Size = new System.Drawing.Size(157, 41);
+            this.btnResetSearchFilter.TabIndex = 57;
+            this.btnResetSearchFilter.Text = "Reset";
+            this.btnResetSearchFilter.UseVisualStyleBackColor = false;
+            this.btnResetSearchFilter.Click += new System.EventHandler(this.btnResetSearchFilter_Click);
+            // 
+            // btnSearchFilter
+            // 
+            this.btnSearchFilter.BackColor = System.Drawing.Color.Orange;
+            this.btnSearchFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchFilter.Location = new System.Drawing.Point(812, 30);
+            this.btnSearchFilter.Name = "btnSearchFilter";
+            this.btnSearchFilter.Size = new System.Drawing.Size(157, 41);
+            this.btnSearchFilter.TabIndex = 56;
+            this.btnSearchFilter.Text = "Search";
+            this.btnSearchFilter.UseVisualStyleBackColor = false;
+            this.btnSearchFilter.Click += new System.EventHandler(this.btnSearchFilter_Click);
+            // 
+            // txtProductSearch
+            // 
+            this.txtProductSearch.Location = new System.Drawing.Point(22, 84);
+            this.txtProductSearch.Name = "txtProductSearch";
+            this.txtProductSearch.Size = new System.Drawing.Size(325, 30);
+            this.txtProductSearch.TabIndex = 55;
+            this.txtProductSearch.TextChanged += new System.EventHandler(this.txtProductSearch_TextChanged);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(413, 46);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(91, 25);
+            this.label17.TabIndex = 54;
+            this.label17.Text = "Ratings:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(17, 46);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(259, 25);
+            this.label16.TabIndex = 53;
+            this.label16.Text = "Search by Product Name:";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
+            // 
+            // btnBack4
+            // 
+            this.btnBack4.BackColor = System.Drawing.Color.Crimson;
+            this.btnBack4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBack4.Location = new System.Drawing.Point(807, 647);
+            this.btnBack4.Name = "btnBack4";
+            this.btnBack4.Size = new System.Drawing.Size(156, 41);
+            this.btnBack4.TabIndex = 39;
+            this.btnBack4.Text = "Back";
+            this.btnBack4.UseVisualStyleBackColor = false;
+            this.btnBack4.Click += new System.EventHandler(this.btnBack4_Click);
+            // 
+            // btnExport
+            // 
+            this.btnExport.BackColor = System.Drawing.Color.Orange;
+            this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnExport.Location = new System.Drawing.Point(211, 545);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(580, 75);
+            this.btnExport.TabIndex = 38;
+            this.btnExport.Text = "Export to MS Excel";
+            this.btnExport.UseVisualStyleBackColor = false;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
+            // dataGridViewReviewsList
+            // 
+            this.dataGridViewReviewsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewReviewsList.Location = new System.Drawing.Point(22, 138);
+            this.dataGridViewReviewsList.Name = "dataGridViewReviewsList";
+            this.dataGridViewReviewsList.RowHeadersWidth = 62;
+            this.dataGridViewReviewsList.RowTemplate.Height = 28;
+            this.dataGridViewReviewsList.Size = new System.Drawing.Size(947, 390);
+            this.dataGridViewReviewsList.TabIndex = 37;
+            this.dataGridViewReviewsList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewReviewsList_CellContentClick);
             // 
             // frmReviews
             // 
@@ -669,18 +762,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRating)).EndInit();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRatingUpdate)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReviewsList)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -691,12 +785,12 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.RichTextBox richTextBoxComment;
+        private System.Windows.Forms.Button btnSaveReview;
+        private System.Windows.Forms.ComboBox comboBoxProduct;
+        private System.Windows.Forms.NumericUpDown numericUpDownRating;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
@@ -704,37 +798,43 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnBack2;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtSearchByReviewIDUpdate;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button btnSearchUser;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnSearchByReviewIDUpdate;
+        private System.Windows.Forms.Button btnUpdateReviewDetails;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnBack3;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button btnDeleteAccount;
+        private System.Windows.Forms.Button btnSearchByReviewIDDelete;
+        private System.Windows.Forms.Button btnDeleteReview;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtSearchByReviewIDDelete;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnBack4;
         private System.Windows.Forms.Button btnExport;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DataGridView dataGridViewReviewsList;
+        private System.Windows.Forms.DateTimePicker dateTimePickerOrderDate;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePickerOrderDateUpdate;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.RichTextBox richTextBoxCommentUpdate;
+        private System.Windows.Forms.ComboBox comboBoxProductUpdate;
+        private System.Windows.Forms.NumericUpDown numericUpDownRatingUpdate;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBoxCustomerUpdate;
+        private System.Windows.Forms.ComboBox comboBoxCustomer;
+        private System.Windows.Forms.Button btnResetSearchFilter;
+        private System.Windows.Forms.Button btnSearchFilter;
+        private System.Windows.Forms.TextBox txtProductSearch;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.ComboBox comboBoxRatingsFilter;
     }
 }
