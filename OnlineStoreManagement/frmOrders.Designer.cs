@@ -79,17 +79,17 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.btnBack4 = new System.Windows.Forms.Button();
-            this.btnExport = new System.Windows.Forms.Button();
-            this.dataGridViewOrderList = new System.Windows.Forms.DataGridView();
+            this.dateTimePickerOrderMonth = new System.Windows.Forms.DateTimePicker();
+            this.label20 = new System.Windows.Forms.Label();
+            this.comboBoxOrderStatus = new System.Windows.Forms.ComboBox();
             this.btnResetSearchFilter = new System.Windows.Forms.Button();
             this.btnSearchFilter = new System.Windows.Forms.Button();
             this.txtOrderSearch = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.comboBoxOrderStatus = new System.Windows.Forms.ComboBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.dateTimePickerOrderMonth = new System.Windows.Forms.DateTimePicker();
+            this.btnBack4 = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.dataGridViewOrderList = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -695,38 +695,33 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = " View Orders List";
             // 
-            // btnBack4
+            // dateTimePickerOrderMonth
             // 
-            this.btnBack4.BackColor = System.Drawing.Color.Crimson;
-            this.btnBack4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBack4.Location = new System.Drawing.Point(811, 625);
-            this.btnBack4.Name = "btnBack4";
-            this.btnBack4.Size = new System.Drawing.Size(156, 41);
-            this.btnBack4.TabIndex = 39;
-            this.btnBack4.Text = "Back";
-            this.btnBack4.UseVisualStyleBackColor = false;
+            this.dateTimePickerOrderMonth.CustomFormat = "MMMM yyyy";
+            this.dateTimePickerOrderMonth.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerOrderMonth.Location = new System.Drawing.Point(560, 81);
+            this.dateTimePickerOrderMonth.Name = "dateTimePickerOrderMonth";
+            this.dateTimePickerOrderMonth.Size = new System.Drawing.Size(235, 30);
+            this.dateTimePickerOrderMonth.TabIndex = 62;
+            this.dateTimePickerOrderMonth.ValueChanged += new System.EventHandler(this.dateTimePickerOrderMonth_ValueChanged);
             // 
-            // btnExport
+            // label20
             // 
-            this.btnExport.BackColor = System.Drawing.Color.Orange;
-            this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.btnExport.Location = new System.Drawing.Point(215, 531);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(580, 75);
-            this.btnExport.TabIndex = 38;
-            this.btnExport.Text = "Export to MS Excel";
-            this.btnExport.UseVisualStyleBackColor = false;
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(555, 43);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(125, 25);
+            this.label20.TabIndex = 61;
+            this.label20.Text = "Order Date:";
             // 
-            // dataGridViewOrderList
+            // comboBoxOrderStatus
             // 
-            this.dataGridViewOrderList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewOrderList.Location = new System.Drawing.Point(20, 140);
-            this.dataGridViewOrderList.Name = "dataGridViewOrderList";
-            this.dataGridViewOrderList.RowHeadersWidth = 62;
-            this.dataGridViewOrderList.RowTemplate.Height = 28;
-            this.dataGridViewOrderList.Size = new System.Drawing.Size(947, 385);
-            this.dataGridViewOrderList.TabIndex = 37;
+            this.comboBoxOrderStatus.FormattingEnabled = true;
+            this.comboBoxOrderStatus.Location = new System.Drawing.Point(335, 78);
+            this.comboBoxOrderStatus.Name = "comboBoxOrderStatus";
+            this.comboBoxOrderStatus.Size = new System.Drawing.Size(202, 33);
+            this.comboBoxOrderStatus.TabIndex = 58;
+            this.comboBoxOrderStatus.SelectedIndexChanged += new System.EventHandler(this.comboBoxOrderStatus_SelectedIndexChanged);
             // 
             // btnResetSearchFilter
             // 
@@ -763,7 +758,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(330, 43);
+            this.label18.Location = new System.Drawing.Point(356, 43);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(81, 25);
             this.label18.TabIndex = 54;
@@ -771,40 +766,44 @@
             // 
             // label19
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(15, 43);
+            this.label19.Location = new System.Drawing.Point(15, 18);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(297, 25);
+            this.label19.Size = new System.Drawing.Size(227, 61);
             this.label19.TabIndex = 53;
             this.label19.Text = "Search by Customer/Product:";
             // 
-            // comboBoxOrderStatus
+            // btnBack4
             // 
-            this.comboBoxOrderStatus.FormattingEnabled = true;
-            this.comboBoxOrderStatus.Location = new System.Drawing.Point(335, 78);
-            this.comboBoxOrderStatus.Name = "comboBoxOrderStatus";
-            this.comboBoxOrderStatus.Size = new System.Drawing.Size(202, 33);
-            this.comboBoxOrderStatus.TabIndex = 58;
-            this.comboBoxOrderStatus.SelectedIndexChanged += new System.EventHandler(this.comboBoxOrderStatus_SelectedIndexChanged);
+            this.btnBack4.BackColor = System.Drawing.Color.Crimson;
+            this.btnBack4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBack4.Location = new System.Drawing.Point(811, 625);
+            this.btnBack4.Name = "btnBack4";
+            this.btnBack4.Size = new System.Drawing.Size(156, 41);
+            this.btnBack4.TabIndex = 39;
+            this.btnBack4.Text = "Back";
+            this.btnBack4.UseVisualStyleBackColor = false;
             // 
-            // label20
+            // btnExport
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(555, 43);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(125, 25);
-            this.label20.TabIndex = 61;
-            this.label20.Text = "Order Date:";
+            this.btnExport.BackColor = System.Drawing.Color.Orange;
+            this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnExport.Location = new System.Drawing.Point(215, 531);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(580, 75);
+            this.btnExport.TabIndex = 38;
+            this.btnExport.Text = "Export to MS Excel";
+            this.btnExport.UseVisualStyleBackColor = false;
             // 
-            // dateTimePickerOrderMonth
+            // dataGridViewOrderList
             // 
-            this.dateTimePickerOrderMonth.CustomFormat = "MMMM yyyy";
-            this.dateTimePickerOrderMonth.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerOrderMonth.Location = new System.Drawing.Point(560, 81);
-            this.dateTimePickerOrderMonth.Name = "dateTimePickerOrderMonth";
-            this.dateTimePickerOrderMonth.Size = new System.Drawing.Size(219, 30);
-            this.dateTimePickerOrderMonth.TabIndex = 62;
-            this.dateTimePickerOrderMonth.ValueChanged += new System.EventHandler(this.dateTimePickerOrderMonth_ValueChanged);
+            this.dataGridViewOrderList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewOrderList.Location = new System.Drawing.Point(20, 140);
+            this.dataGridViewOrderList.Name = "dataGridViewOrderList";
+            this.dataGridViewOrderList.RowHeadersWidth = 62;
+            this.dataGridViewOrderList.RowTemplate.Height = 28;
+            this.dataGridViewOrderList.Size = new System.Drawing.Size(947, 385);
+            this.dataGridViewOrderList.TabIndex = 37;
             // 
             // frmOrders
             // 

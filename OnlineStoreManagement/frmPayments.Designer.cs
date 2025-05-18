@@ -33,13 +33,14 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxPaymentMethod = new System.Windows.Forms.ComboBox();
+            this.comboBoxOrderID = new System.Windows.Forms.ComboBox();
+            this.btnAddOrder = new System.Windows.Forms.Button();
+            this.comboBoxStatus = new System.Windows.Forms.ComboBox();
+            this.dateTimePickerPaymentDate = new System.Windows.Forms.DateTimePicker();
+            this.numericUpDownTotalAmount = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -48,50 +49,57 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnBack2 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.btnSearchUser = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button6 = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.btnDeleteAccount = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button7 = new System.Windows.Forms.Button();
-            this.btnExport = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.comboBoxPaymentMethodUpdate = new System.Windows.Forms.ComboBox();
+            this.comboBoxOrderIDUpdate = new System.Windows.Forms.ComboBox();
+            this.comboBoxStatusUpdate = new System.Windows.Forms.ComboBox();
+            this.dateTimePickerPaymentDateUpdate = new System.Windows.Forms.DateTimePicker();
+            this.numericUpDownTotalAmountUpdate = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.txtSearchbyPaymentID = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.btnSearchbyPaymentID = new System.Windows.Forms.Button();
+            this.btnUpdatePaymentDetails = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnBack3 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnSearchByPaymentIDDelete = new System.Windows.Forms.Button();
+            this.btnDeletePayment = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtSearchByPaymentIDDelete = new System.Windows.Forms.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.btnBack4 = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.dataGridViewPaymentsList = new System.Windows.Forms.DataGridView();
+            this.label20 = new System.Windows.Forms.Label();
+            this.comboBoxPayementMethodFilter = new System.Windows.Forms.ComboBox();
+            this.btnResetSearchFilter = new System.Windows.Forms.Button();
+            this.btnSearchFilter = new System.Windows.Forms.Button();
+            this.txtOrderSearch = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.comboBoxPaymentStatusFilter = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTotalAmount)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTotalAmountUpdate)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPaymentsList)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -112,7 +120,7 @@
             this.tabPage1.BackColor = System.Drawing.Color.YellowGreen;
             this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.btnBack);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
@@ -144,26 +152,27 @@
             this.label1.Text = "ADD PAYMENT";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button2
+            // btnBack
             // 
-            this.button2.BackColor = System.Drawing.Color.Crimson;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(795, 627);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(156, 41);
-            this.button2.TabIndex = 28;
-            this.button2.Text = "Back";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnBack.BackColor = System.Drawing.Color.Crimson;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBack.Location = new System.Drawing.Point(795, 627);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(156, 41);
+            this.btnBack.TabIndex = 28;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox5);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.numericUpDown2);
+            this.groupBox1.Controls.Add(this.comboBoxPaymentMethod);
+            this.groupBox1.Controls.Add(this.comboBoxOrderID);
+            this.groupBox1.Controls.Add(this.btnAddOrder);
+            this.groupBox1.Controls.Add(this.comboBoxStatus);
+            this.groupBox1.Controls.Add(this.dateTimePickerPaymentDate);
+            this.groupBox1.Controls.Add(this.numericUpDownTotalAmount);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label9);
@@ -175,48 +184,67 @@
             this.groupBox1.TabIndex = 29;
             this.groupBox1.TabStop = false;
             // 
-            // comboBox2
+            // comboBoxPaymentMethod
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(296, 49);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(392, 37);
-            this.comboBox2.TabIndex = 17;
+            this.comboBoxPaymentMethod.FormattingEnabled = true;
+            this.comboBoxPaymentMethod.Location = new System.Drawing.Point(296, 240);
+            this.comboBoxPaymentMethod.Name = "comboBoxPaymentMethod";
+            this.comboBoxPaymentMethod.Size = new System.Drawing.Size(392, 37);
+            this.comboBoxPaymentMethod.TabIndex = 28;
+            this.comboBoxPaymentMethod.SelectedIndexChanged += new System.EventHandler(this.comboBoxPaymentMethod_SelectedIndexChanged);
             // 
-            // button1
+            // comboBoxOrderID
             // 
-            this.button1.BackColor = System.Drawing.Color.Orange;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(209, 390);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(349, 56);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Add Order";
-            this.button1.UseVisualStyleBackColor = false;
+            this.comboBoxOrderID.FormattingEnabled = true;
+            this.comboBoxOrderID.Location = new System.Drawing.Point(296, 49);
+            this.comboBoxOrderID.Name = "comboBoxOrderID";
+            this.comboBoxOrderID.Size = new System.Drawing.Size(392, 37);
+            this.comboBoxOrderID.TabIndex = 17;
+            this.comboBoxOrderID.SelectedIndexChanged += new System.EventHandler(this.comboBoxOrderID_SelectedIndexChanged);
             // 
-            // comboBox1
+            // btnAddOrder
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(296, 309);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(392, 37);
-            this.comboBox1.TabIndex = 18;
+            this.btnAddOrder.BackColor = System.Drawing.Color.Orange;
+            this.btnAddOrder.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnAddOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddOrder.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAddOrder.Location = new System.Drawing.Point(209, 390);
+            this.btnAddOrder.Name = "btnAddOrder";
+            this.btnAddOrder.Size = new System.Drawing.Size(349, 56);
+            this.btnAddOrder.TabIndex = 27;
+            this.btnAddOrder.Text = "Add Order";
+            this.btnAddOrder.UseVisualStyleBackColor = false;
+            this.btnAddOrder.Click += new System.EventHandler(this.btnAddOrder_Click);
             // 
-            // dateTimePicker1
+            // comboBoxStatus
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(296, 114);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(392, 35);
-            this.dateTimePicker1.TabIndex = 19;
+            this.comboBoxStatus.FormattingEnabled = true;
+            this.comboBoxStatus.Location = new System.Drawing.Point(296, 309);
+            this.comboBoxStatus.Name = "comboBoxStatus";
+            this.comboBoxStatus.Size = new System.Drawing.Size(392, 37);
+            this.comboBoxStatus.TabIndex = 18;
+            this.comboBoxStatus.SelectedIndexChanged += new System.EventHandler(this.comboBoxStatus_SelectedIndexChanged);
             // 
-            // numericUpDown2
+            // dateTimePickerPaymentDate
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(296, 176);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(392, 35);
-            this.numericUpDown2.TabIndex = 25;
+            this.dateTimePickerPaymentDate.Location = new System.Drawing.Point(296, 114);
+            this.dateTimePickerPaymentDate.Name = "dateTimePickerPaymentDate";
+            this.dateTimePickerPaymentDate.Size = new System.Drawing.Size(392, 35);
+            this.dateTimePickerPaymentDate.TabIndex = 19;
+            this.dateTimePickerPaymentDate.ValueChanged += new System.EventHandler(this.dateTimePickerPaymentDate_ValueChanged);
+            // 
+            // numericUpDownTotalAmount
+            // 
+            this.numericUpDownTotalAmount.Location = new System.Drawing.Point(296, 176);
+            this.numericUpDownTotalAmount.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.numericUpDownTotalAmount.Name = "numericUpDownTotalAmount";
+            this.numericUpDownTotalAmount.Size = new System.Drawing.Size(392, 35);
+            this.numericUpDownTotalAmount.TabIndex = 25;
+            this.numericUpDownTotalAmount.ValueChanged += new System.EventHandler(this.numericUpDownTotalAmount_ValueChanged);
             // 
             // label10
             // 
@@ -283,7 +311,7 @@
             this.tabPage2.BackColor = System.Drawing.Color.YellowGreen;
             this.tabPage2.Controls.Add(this.pictureBox2);
             this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.button3);
+            this.tabPage2.Controls.Add(this.btnBack2);
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
@@ -314,274 +342,88 @@
             this.label2.Text = "UPDATE PAYMENT DETAILS";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button3
+            // btnBack2
             // 
-            this.button3.BackColor = System.Drawing.Color.Crimson;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(794, 626);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(156, 41);
-            this.button3.TabIndex = 32;
-            this.button3.Text = "Back";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnBack2.BackColor = System.Drawing.Color.Crimson;
+            this.btnBack2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBack2.Location = new System.Drawing.Point(794, 626);
+            this.btnBack2.Name = "btnBack2";
+            this.btnBack2.Size = new System.Drawing.Size(156, 41);
+            this.btnBack2.TabIndex = 32;
+            this.btnBack2.Text = "Back";
+            this.btnBack2.UseVisualStyleBackColor = false;
+            this.btnBack2.Click += new System.EventHandler(this.btnBack2_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.comboBox3);
-            this.groupBox2.Controls.Add(this.comboBox4);
-            this.groupBox2.Controls.Add(this.comboBox6);
-            this.groupBox2.Controls.Add(this.dateTimePicker2);
-            this.groupBox2.Controls.Add(this.numericUpDown1);
+            this.groupBox2.Controls.Add(this.comboBoxPaymentMethodUpdate);
+            this.groupBox2.Controls.Add(this.comboBoxOrderIDUpdate);
+            this.groupBox2.Controls.Add(this.comboBoxStatusUpdate);
+            this.groupBox2.Controls.Add(this.dateTimePickerPaymentDateUpdate);
+            this.groupBox2.Controls.Add(this.numericUpDownTotalAmountUpdate);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.textBox9);
+            this.groupBox2.Controls.Add(this.txtSearchbyPaymentID);
             this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.btnSearchUser);
-            this.groupBox2.Controls.Add(this.button4);
+            this.groupBox2.Controls.Add(this.btnSearchbyPaymentID);
+            this.groupBox2.Controls.Add(this.btnUpdatePaymentDetails);
             this.groupBox2.Location = new System.Drawing.Point(112, 111);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(761, 503);
             this.groupBox2.TabIndex = 33;
             this.groupBox2.TabStop = false;
             // 
-            // textBox9
+            // comboBoxPaymentMethodUpdate
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox9.Location = new System.Drawing.Point(269, 46);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(293, 30);
-            this.textBox9.TabIndex = 32;
+            this.comboBoxPaymentMethodUpdate.FormattingEnabled = true;
+            this.comboBoxPaymentMethodUpdate.Location = new System.Drawing.Point(268, 291);
+            this.comboBoxPaymentMethodUpdate.Name = "comboBoxPaymentMethodUpdate";
+            this.comboBoxPaymentMethodUpdate.Size = new System.Drawing.Size(392, 33);
+            this.comboBoxPaymentMethodUpdate.TabIndex = 42;
+            this.comboBoxPaymentMethodUpdate.SelectedIndexChanged += new System.EventHandler(this.comboBoxPaymentMethodUpdate_SelectedIndexChanged);
             // 
-            // label13
+            // comboBoxOrderIDUpdate
             // 
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label13.Location = new System.Drawing.Point(62, 26);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(174, 59);
-            this.label13.TabIndex = 31;
-            this.label13.Text = "Search by Payment ID:";
+            this.comboBoxOrderIDUpdate.FormattingEnabled = true;
+            this.comboBoxOrderIDUpdate.Location = new System.Drawing.Point(268, 108);
+            this.comboBoxOrderIDUpdate.Name = "comboBoxOrderIDUpdate";
+            this.comboBoxOrderIDUpdate.Size = new System.Drawing.Size(392, 33);
+            this.comboBoxOrderIDUpdate.TabIndex = 33;
+            this.comboBoxOrderIDUpdate.SelectedIndexChanged += new System.EventHandler(this.comboBoxOrderIDUpdate_SelectedIndexChanged);
             // 
-            // btnSearchUser
+            // comboBoxStatusUpdate
             // 
-            this.btnSearchUser.BackColor = System.Drawing.Color.Orange;
-            this.btnSearchUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.btnSearchUser.Location = new System.Drawing.Point(568, 43);
-            this.btnSearchUser.Name = "btnSearchUser";
-            this.btnSearchUser.Size = new System.Drawing.Size(133, 41);
-            this.btnSearchUser.TabIndex = 30;
-            this.btnSearchUser.Text = "Search";
-            this.btnSearchUser.UseVisualStyleBackColor = false;
+            this.comboBoxStatusUpdate.FormattingEnabled = true;
+            this.comboBoxStatusUpdate.Location = new System.Drawing.Point(268, 354);
+            this.comboBoxStatusUpdate.Name = "comboBoxStatusUpdate";
+            this.comboBoxStatusUpdate.Size = new System.Drawing.Size(392, 33);
+            this.comboBoxStatusUpdate.TabIndex = 34;
+            this.comboBoxStatusUpdate.SelectedIndexChanged += new System.EventHandler(this.comboBoxStatusUpdate_SelectedIndexChanged);
             // 
-            // button4
+            // dateTimePickerPaymentDateUpdate
             // 
-            this.button4.BackColor = System.Drawing.Color.Orange;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(162, 431);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(452, 56);
-            this.button4.TabIndex = 27;
-            this.button4.Text = "Update Payment Details";
-            this.button4.UseVisualStyleBackColor = false;
+            this.dateTimePickerPaymentDateUpdate.Location = new System.Drawing.Point(268, 170);
+            this.dateTimePickerPaymentDateUpdate.Name = "dateTimePickerPaymentDateUpdate";
+            this.dateTimePickerPaymentDateUpdate.Size = new System.Drawing.Size(392, 30);
+            this.dateTimePickerPaymentDateUpdate.TabIndex = 35;
+            this.dateTimePickerPaymentDateUpdate.ValueChanged += new System.EventHandler(this.dateTimePickerPaymentDateUpdate_ValueChanged);
             // 
-            // tabPage3
+            // numericUpDownTotalAmountUpdate
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.YellowGreen;
-            this.tabPage3.Controls.Add(this.button6);
-            this.tabPage3.Controls.Add(this.groupBox3);
-            this.tabPage3.Controls.Add(this.pictureBox3);
-            this.tabPage3.Controls.Add(this.label14);
-            this.tabPage3.Location = new System.Drawing.Point(4, 34);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(989, 690);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Delete Payment";
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Crimson;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button6.Location = new System.Drawing.Point(777, 617);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(156, 41);
-            this.button6.TabIndex = 39;
-            this.button6.Text = "Back";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.button5);
-            this.groupBox3.Controls.Add(this.btnDeleteAccount);
-            this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.textBox8);
-            this.groupBox3.Location = new System.Drawing.Point(114, 186);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(761, 334);
-            this.groupBox3.TabIndex = 38;
-            this.groupBox3.TabStop = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Orange;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(514, 121);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(157, 41);
-            this.button5.TabIndex = 21;
-            this.button5.Text = "Search";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // btnDeleteAccount
-            // 
-            this.btnDeleteAccount.BackColor = System.Drawing.Color.Crimson;
-            this.btnDeleteAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteAccount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDeleteAccount.Location = new System.Drawing.Point(206, 235);
-            this.btnDeleteAccount.Name = "btnDeleteAccount";
-            this.btnDeleteAccount.Size = new System.Drawing.Size(349, 67);
-            this.btnDeleteAccount.TabIndex = 20;
-            this.btnDeleteAccount.Text = "Delete Payment";
-            this.btnDeleteAccount.UseVisualStyleBackColor = false;
-            // 
-            // label15
-            // 
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label15.Location = new System.Drawing.Point(88, 62);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(298, 40);
-            this.label15.TabIndex = 19;
-            this.label15.Text = "Search by Payment ID:";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox8.Location = new System.Drawing.Point(93, 124);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(406, 35);
-            this.textBox8.TabIndex = 17;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(96, 30);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(120, 117);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 37;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label14
-            // 
-            this.label14.BackColor = System.Drawing.Color.DimGray;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label14.Location = new System.Drawing.Point(222, 51);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(653, 69);
-            this.label14.TabIndex = 36;
-            this.label14.Text = "DELETE PAYMENT";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.Color.YellowGreen;
-            this.tabPage4.Controls.Add(this.button7);
-            this.tabPage4.Controls.Add(this.btnExport);
-            this.tabPage4.Controls.Add(this.dataGridView1);
-            this.tabPage4.Location = new System.Drawing.Point(4, 34);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(989, 690);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = " View Payments List";
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.Crimson;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Location = new System.Drawing.Point(811, 625);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(156, 41);
-            this.button7.TabIndex = 39;
-            this.button7.Text = "Back";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // btnExport
-            // 
-            this.btnExport.BackColor = System.Drawing.Color.Orange;
-            this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.btnExport.Location = new System.Drawing.Point(211, 520);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(580, 75);
-            this.btnExport.TabIndex = 38;
-            this.btnExport.Text = "Export to MS Excel";
-            this.btnExport.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(21, 24);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(947, 479);
-            this.dataGridView1.TabIndex = 37;
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(296, 240);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(392, 37);
-            this.comboBox5.TabIndex = 28;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(268, 291);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(392, 33);
-            this.comboBox3.TabIndex = 42;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(268, 108);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(392, 33);
-            this.comboBox4.TabIndex = 33;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(268, 354);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(392, 33);
-            this.comboBox6.TabIndex = 34;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(268, 170);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(392, 30);
-            this.dateTimePicker2.TabIndex = 35;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(269, 230);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(392, 30);
-            this.numericUpDown1.TabIndex = 41;
+            this.numericUpDownTotalAmountUpdate.Location = new System.Drawing.Point(269, 230);
+            this.numericUpDownTotalAmountUpdate.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.numericUpDownTotalAmountUpdate.Name = "numericUpDownTotalAmountUpdate";
+            this.numericUpDownTotalAmountUpdate.Size = new System.Drawing.Size(392, 30);
+            this.numericUpDownTotalAmountUpdate.TabIndex = 41;
+            this.numericUpDownTotalAmountUpdate.ValueChanged += new System.EventHandler(this.numericUpDownTotalAmountUpdate_ValueChanged);
             // 
             // label3
             // 
@@ -643,6 +485,289 @@
             this.label12.TabIndex = 38;
             this.label12.Text = "Status:";
             // 
+            // txtSearchbyPaymentID
+            // 
+            this.txtSearchbyPaymentID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.txtSearchbyPaymentID.Location = new System.Drawing.Point(269, 46);
+            this.txtSearchbyPaymentID.Name = "txtSearchbyPaymentID";
+            this.txtSearchbyPaymentID.Size = new System.Drawing.Size(293, 30);
+            this.txtSearchbyPaymentID.TabIndex = 32;
+            this.txtSearchbyPaymentID.TextChanged += new System.EventHandler(this.txtSearchbyPaymentID_TextChanged);
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label13.Location = new System.Drawing.Point(62, 26);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(174, 59);
+            this.label13.TabIndex = 31;
+            this.label13.Text = "Search by Payment ID:";
+            // 
+            // btnSearchbyPaymentID
+            // 
+            this.btnSearchbyPaymentID.BackColor = System.Drawing.Color.Orange;
+            this.btnSearchbyPaymentID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.btnSearchbyPaymentID.Location = new System.Drawing.Point(568, 43);
+            this.btnSearchbyPaymentID.Name = "btnSearchbyPaymentID";
+            this.btnSearchbyPaymentID.Size = new System.Drawing.Size(133, 41);
+            this.btnSearchbyPaymentID.TabIndex = 30;
+            this.btnSearchbyPaymentID.Text = "Search";
+            this.btnSearchbyPaymentID.UseVisualStyleBackColor = false;
+            this.btnSearchbyPaymentID.Click += new System.EventHandler(this.btnSearchbyPaymentID_Click);
+            // 
+            // btnUpdatePaymentDetails
+            // 
+            this.btnUpdatePaymentDetails.BackColor = System.Drawing.Color.Orange;
+            this.btnUpdatePaymentDetails.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnUpdatePaymentDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdatePaymentDetails.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnUpdatePaymentDetails.Location = new System.Drawing.Point(162, 431);
+            this.btnUpdatePaymentDetails.Name = "btnUpdatePaymentDetails";
+            this.btnUpdatePaymentDetails.Size = new System.Drawing.Size(452, 56);
+            this.btnUpdatePaymentDetails.TabIndex = 27;
+            this.btnUpdatePaymentDetails.Text = "Update Payment Details";
+            this.btnUpdatePaymentDetails.UseVisualStyleBackColor = false;
+            this.btnUpdatePaymentDetails.Click += new System.EventHandler(this.btnUpdatePaymentDetails_Click);
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.YellowGreen;
+            this.tabPage3.Controls.Add(this.btnBack3);
+            this.tabPage3.Controls.Add(this.groupBox3);
+            this.tabPage3.Controls.Add(this.pictureBox3);
+            this.tabPage3.Controls.Add(this.label14);
+            this.tabPage3.Location = new System.Drawing.Point(4, 34);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(989, 690);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Delete Payment";
+            // 
+            // btnBack3
+            // 
+            this.btnBack3.BackColor = System.Drawing.Color.Crimson;
+            this.btnBack3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBack3.Location = new System.Drawing.Point(777, 617);
+            this.btnBack3.Name = "btnBack3";
+            this.btnBack3.Size = new System.Drawing.Size(156, 41);
+            this.btnBack3.TabIndex = 39;
+            this.btnBack3.Text = "Back";
+            this.btnBack3.UseVisualStyleBackColor = false;
+            this.btnBack3.Click += new System.EventHandler(this.btnBack3_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnSearchByPaymentIDDelete);
+            this.groupBox3.Controls.Add(this.btnDeletePayment);
+            this.groupBox3.Controls.Add(this.label15);
+            this.groupBox3.Controls.Add(this.txtSearchByPaymentIDDelete);
+            this.groupBox3.Location = new System.Drawing.Point(114, 186);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(761, 334);
+            this.groupBox3.TabIndex = 38;
+            this.groupBox3.TabStop = false;
+            // 
+            // btnSearchByPaymentIDDelete
+            // 
+            this.btnSearchByPaymentIDDelete.BackColor = System.Drawing.Color.Orange;
+            this.btnSearchByPaymentIDDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchByPaymentIDDelete.Location = new System.Drawing.Point(514, 121);
+            this.btnSearchByPaymentIDDelete.Name = "btnSearchByPaymentIDDelete";
+            this.btnSearchByPaymentIDDelete.Size = new System.Drawing.Size(157, 41);
+            this.btnSearchByPaymentIDDelete.TabIndex = 21;
+            this.btnSearchByPaymentIDDelete.Text = "Search";
+            this.btnSearchByPaymentIDDelete.UseVisualStyleBackColor = false;
+            this.btnSearchByPaymentIDDelete.Click += new System.EventHandler(this.btnSearchByPaymentIDDelete_Click);
+            // 
+            // btnDeletePayment
+            // 
+            this.btnDeletePayment.BackColor = System.Drawing.Color.Crimson;
+            this.btnDeletePayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeletePayment.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDeletePayment.Location = new System.Drawing.Point(206, 235);
+            this.btnDeletePayment.Name = "btnDeletePayment";
+            this.btnDeletePayment.Size = new System.Drawing.Size(349, 67);
+            this.btnDeletePayment.TabIndex = 20;
+            this.btnDeletePayment.Text = "Delete Payment";
+            this.btnDeletePayment.UseVisualStyleBackColor = false;
+            this.btnDeletePayment.Click += new System.EventHandler(this.btnDeletePayment_Click);
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label15.Location = new System.Drawing.Point(88, 62);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(298, 40);
+            this.label15.TabIndex = 19;
+            this.label15.Text = "Search by Payment ID:";
+            // 
+            // txtSearchByPaymentIDDelete
+            // 
+            this.txtSearchByPaymentIDDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.txtSearchByPaymentIDDelete.Location = new System.Drawing.Point(93, 124);
+            this.txtSearchByPaymentIDDelete.Name = "txtSearchByPaymentIDDelete";
+            this.txtSearchByPaymentIDDelete.Size = new System.Drawing.Size(406, 35);
+            this.txtSearchByPaymentIDDelete.TabIndex = 17;
+            this.txtSearchByPaymentIDDelete.TextChanged += new System.EventHandler(this.txtSearchByPaymentIDDelete_TextChanged);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(96, 30);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(120, 117);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 37;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label14
+            // 
+            this.label14.BackColor = System.Drawing.Color.DimGray;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label14.Location = new System.Drawing.Point(222, 51);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(653, 69);
+            this.label14.TabIndex = 36;
+            this.label14.Text = "DELETE PAYMENT";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.YellowGreen;
+            this.tabPage4.Controls.Add(this.comboBoxPaymentStatusFilter);
+            this.tabPage4.Controls.Add(this.label20);
+            this.tabPage4.Controls.Add(this.comboBoxPayementMethodFilter);
+            this.tabPage4.Controls.Add(this.btnResetSearchFilter);
+            this.tabPage4.Controls.Add(this.btnSearchFilter);
+            this.tabPage4.Controls.Add(this.txtOrderSearch);
+            this.tabPage4.Controls.Add(this.label18);
+            this.tabPage4.Controls.Add(this.label19);
+            this.tabPage4.Controls.Add(this.btnBack4);
+            this.tabPage4.Controls.Add(this.btnExport);
+            this.tabPage4.Controls.Add(this.dataGridViewPaymentsList);
+            this.tabPage4.Location = new System.Drawing.Point(4, 34);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(989, 690);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = " View Payments List";
+            // 
+            // btnBack4
+            // 
+            this.btnBack4.BackColor = System.Drawing.Color.Crimson;
+            this.btnBack4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBack4.Location = new System.Drawing.Point(811, 625);
+            this.btnBack4.Name = "btnBack4";
+            this.btnBack4.Size = new System.Drawing.Size(156, 41);
+            this.btnBack4.TabIndex = 39;
+            this.btnBack4.Text = "Back";
+            this.btnBack4.UseVisualStyleBackColor = false;
+            this.btnBack4.Click += new System.EventHandler(this.btnBack4_Click);
+            // 
+            // btnExport
+            // 
+            this.btnExport.BackColor = System.Drawing.Color.Orange;
+            this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnExport.Location = new System.Drawing.Point(211, 520);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(580, 75);
+            this.btnExport.TabIndex = 38;
+            this.btnExport.Text = "Export to MS Excel";
+            this.btnExport.UseVisualStyleBackColor = false;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
+            // dataGridViewPaymentsList
+            // 
+            this.dataGridViewPaymentsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPaymentsList.Location = new System.Drawing.Point(21, 145);
+            this.dataGridViewPaymentsList.Name = "dataGridViewPaymentsList";
+            this.dataGridViewPaymentsList.RowHeadersWidth = 62;
+            this.dataGridViewPaymentsList.RowTemplate.Height = 28;
+            this.dataGridViewPaymentsList.Size = new System.Drawing.Size(947, 358);
+            this.dataGridViewPaymentsList.TabIndex = 37;
+            this.dataGridViewPaymentsList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPaymentsList_CellContentClick);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(559, 43);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(171, 25);
+            this.label20.TabIndex = 69;
+            this.label20.Text = "Payment Status:";
+            // 
+            // comboBoxPayementMethodFilter
+            // 
+            this.comboBoxPayementMethodFilter.FormattingEnabled = true;
+            this.comboBoxPayementMethodFilter.Location = new System.Drawing.Point(339, 78);
+            this.comboBoxPayementMethodFilter.Name = "comboBoxPayementMethodFilter";
+            this.comboBoxPayementMethodFilter.Size = new System.Drawing.Size(202, 33);
+            this.comboBoxPayementMethodFilter.TabIndex = 68;
+            this.comboBoxPayementMethodFilter.SelectedIndexChanged += new System.EventHandler(this.comboBoxPayementMethodFilter_SelectedIndexChanged);
+            // 
+            // btnResetSearchFilter
+            // 
+            this.btnResetSearchFilter.BackColor = System.Drawing.Color.Crimson;
+            this.btnResetSearchFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.btnResetSearchFilter.Location = new System.Drawing.Point(814, 78);
+            this.btnResetSearchFilter.Name = "btnResetSearchFilter";
+            this.btnResetSearchFilter.Size = new System.Drawing.Size(157, 41);
+            this.btnResetSearchFilter.TabIndex = 67;
+            this.btnResetSearchFilter.Text = "Reset";
+            this.btnResetSearchFilter.UseVisualStyleBackColor = false;
+            this.btnResetSearchFilter.Click += new System.EventHandler(this.btnResetSearchFilter_Click);
+            // 
+            // btnSearchFilter
+            // 
+            this.btnSearchFilter.BackColor = System.Drawing.Color.Orange;
+            this.btnSearchFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchFilter.Location = new System.Drawing.Point(814, 27);
+            this.btnSearchFilter.Name = "btnSearchFilter";
+            this.btnSearchFilter.Size = new System.Drawing.Size(157, 41);
+            this.btnSearchFilter.TabIndex = 66;
+            this.btnSearchFilter.Text = "Search";
+            this.btnSearchFilter.UseVisualStyleBackColor = false;
+            this.btnSearchFilter.Click += new System.EventHandler(this.btnSearchFilter_Click);
+            // 
+            // txtOrderSearch
+            // 
+            this.txtOrderSearch.Location = new System.Drawing.Point(24, 81);
+            this.txtOrderSearch.Name = "txtOrderSearch";
+            this.txtOrderSearch.Size = new System.Drawing.Size(292, 30);
+            this.txtOrderSearch.TabIndex = 65;
+            this.txtOrderSearch.TextChanged += new System.EventHandler(this.txtOrderSearch_TextChanged);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(334, 43);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(181, 25);
+            this.label18.TabIndex = 64;
+            this.label18.Text = "Payment Method:";
+            // 
+            // label19
+            // 
+            this.label19.Location = new System.Drawing.Point(19, 43);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(297, 25);
+            this.label19.TabIndex = 63;
+            this.label19.Text = "Search by Order ID:";
+            // 
+            // comboBoxPaymentStatusFilter
+            // 
+            this.comboBoxPaymentStatusFilter.FormattingEnabled = true;
+            this.comboBoxPaymentStatusFilter.Location = new System.Drawing.Point(564, 78);
+            this.comboBoxPaymentStatusFilter.Name = "comboBoxPaymentStatusFilter";
+            this.comboBoxPaymentStatusFilter.Size = new System.Drawing.Size(202, 33);
+            this.comboBoxPaymentStatusFilter.TabIndex = 71;
+            this.comboBoxPaymentStatusFilter.SelectedIndexChanged += new System.EventHandler(this.comboBoxPaymentStatusFilter_SelectedIndexChanged);
+            // 
             // frmPayments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -656,18 +781,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTotalAmount)).EndInit();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTotalAmountUpdate)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPaymentsList)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -678,13 +804,13 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.ComboBox comboBoxOrderID;
+        private System.Windows.Forms.Button btnAddOrder;
+        private System.Windows.Forms.ComboBox comboBoxStatus;
+        private System.Windows.Forms.DateTimePicker dateTimePickerPaymentDate;
+        private System.Windows.Forms.NumericUpDown numericUpDownTotalAmount;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label9;
@@ -693,35 +819,43 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnBack2;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtSearchbyPaymentID;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button btnSearchUser;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnSearchbyPaymentID;
+        private System.Windows.Forms.Button btnUpdatePaymentDetails;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnBack3;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button btnDeleteAccount;
+        private System.Windows.Forms.Button btnSearchByPaymentIDDelete;
+        private System.Windows.Forms.Button btnDeletePayment;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtSearchByPaymentIDDelete;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnBack4;
         private System.Windows.Forms.Button btnExport;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.DataGridView dataGridViewPaymentsList;
+        private System.Windows.Forms.ComboBox comboBoxPaymentMethod;
+        private System.Windows.Forms.ComboBox comboBoxPaymentMethodUpdate;
+        private System.Windows.Forms.ComboBox comboBoxOrderIDUpdate;
+        private System.Windows.Forms.ComboBox comboBoxStatusUpdate;
+        private System.Windows.Forms.DateTimePicker dateTimePickerPaymentDateUpdate;
+        private System.Windows.Forms.NumericUpDown numericUpDownTotalAmountUpdate;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.ComboBox comboBoxPayementMethodFilter;
+        private System.Windows.Forms.Button btnResetSearchFilter;
+        private System.Windows.Forms.Button btnSearchFilter;
+        private System.Windows.Forms.TextBox txtOrderSearch;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.ComboBox comboBoxPaymentStatusFilter;
     }
 }
