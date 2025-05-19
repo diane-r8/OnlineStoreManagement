@@ -37,6 +37,8 @@
             this.btnPaymentManagement = new System.Windows.Forms.Button();
             this.btnReviewManagement = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblLoggedInAs = new System.Windows.Forms.Label();
+            this.lnkLogout = new System.Windows.Forms.LinkLabel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -47,8 +49,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnExit = new System.Windows.Forms.Button();
-            this.lnkLogout = new System.Windows.Forms.LinkLabel();
-            this.lblLoggedInAs = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -192,6 +192,30 @@
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // lblLoggedInAs
+            // 
+            this.lblLoggedInAs.BackColor = System.Drawing.Color.DarkOrange;
+            this.lblLoggedInAs.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoggedInAs.Location = new System.Drawing.Point(596, 181);
+            this.lblLoggedInAs.Name = "lblLoggedInAs";
+            this.lblLoggedInAs.Size = new System.Drawing.Size(271, 29);
+            this.lblLoggedInAs.TabIndex = 25;
+            this.lblLoggedInAs.Text = "Logged in as:";
+            // 
+            // lnkLogout
+            // 
+            this.lnkLogout.ActiveLinkColor = System.Drawing.Color.White;
+            this.lnkLogout.AutoSize = true;
+            this.lnkLogout.BackColor = System.Drawing.Color.Crimson;
+            this.lnkLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkLogout.LinkColor = System.Drawing.Color.White;
+            this.lnkLogout.Location = new System.Drawing.Point(888, 181);
+            this.lnkLogout.Name = "lnkLogout";
+            this.lnkLogout.Size = new System.Drawing.Size(93, 29);
+            this.lnkLogout.TabIndex = 24;
+            this.lnkLogout.TabStop = true;
+            this.lnkLogout.Text = "Logout";
+            // 
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
@@ -303,35 +327,11 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // lnkLogout
-            // 
-            this.lnkLogout.ActiveLinkColor = System.Drawing.Color.White;
-            this.lnkLogout.AutoSize = true;
-            this.lnkLogout.BackColor = System.Drawing.Color.Crimson;
-            this.lnkLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnkLogout.LinkColor = System.Drawing.Color.White;
-            this.lnkLogout.Location = new System.Drawing.Point(888, 181);
-            this.lnkLogout.Name = "lnkLogout";
-            this.lnkLogout.Size = new System.Drawing.Size(93, 29);
-            this.lnkLogout.TabIndex = 24;
-            this.lnkLogout.TabStop = true;
-            this.lnkLogout.Text = "Logout";
-            // 
-            // lblLoggedInAs
-            // 
-            this.lblLoggedInAs.BackColor = System.Drawing.Color.DarkOrange;
-            this.lblLoggedInAs.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLoggedInAs.Location = new System.Drawing.Point(596, 181);
-            this.lblLoggedInAs.Name = "lblLoggedInAs";
-            this.lblLoggedInAs.Size = new System.Drawing.Size(271, 29);
-            this.lblLoggedInAs.TabIndex = 25;
-            this.lblLoggedInAs.Text = "Logged in as:";
-            // 
             // frmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1002, 730);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

@@ -66,13 +66,13 @@
             this.lblDescription.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic);
             this.lblDescription.ForeColor = System.Drawing.Color.White;
-            this.lblDescription.Location = new System.Drawing.Point(77, 536);
+            this.lblDescription.Location = new System.Drawing.Point(53, 521);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(387, 60);
+            this.lblDescription.Size = new System.Drawing.Size(429, 113);
             this.lblDescription.TabIndex = 10;
             this.lblDescription.Text = "Track and manage customers, orders, and payments in one place for your online sto" +
     "re.";
-            this.lblDescription.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lblDescription.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblTitle
             // 
@@ -203,6 +203,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1002, 730);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

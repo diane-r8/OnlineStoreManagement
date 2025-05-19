@@ -75,9 +75,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.btnBack4 = new System.Windows.Forms.Button();
-            this.btnExport = new System.Windows.Forms.Button();
-            this.dataGridViewPaymentsList = new System.Windows.Forms.DataGridView();
+            this.comboBoxPaymentStatusFilter = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
             this.comboBoxPayementMethodFilter = new System.Windows.Forms.ComboBox();
             this.btnResetSearchFilter = new System.Windows.Forms.Button();
@@ -85,7 +83,9 @@
             this.txtOrderSearch = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.comboBoxPaymentStatusFilter = new System.Windows.Forms.ComboBox();
+            this.btnBack4 = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.dataGridViewPaymentsList = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -656,41 +656,14 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = " View Payments List";
             // 
-            // btnBack4
+            // comboBoxPaymentStatusFilter
             // 
-            this.btnBack4.BackColor = System.Drawing.Color.Crimson;
-            this.btnBack4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBack4.Location = new System.Drawing.Point(811, 625);
-            this.btnBack4.Name = "btnBack4";
-            this.btnBack4.Size = new System.Drawing.Size(156, 41);
-            this.btnBack4.TabIndex = 39;
-            this.btnBack4.Text = "Back";
-            this.btnBack4.UseVisualStyleBackColor = false;
-            this.btnBack4.Click += new System.EventHandler(this.btnBack4_Click);
-            // 
-            // btnExport
-            // 
-            this.btnExport.BackColor = System.Drawing.Color.Orange;
-            this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.btnExport.Location = new System.Drawing.Point(211, 520);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(580, 75);
-            this.btnExport.TabIndex = 38;
-            this.btnExport.Text = "Export to MS Excel";
-            this.btnExport.UseVisualStyleBackColor = false;
-            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
-            // 
-            // dataGridViewPaymentsList
-            // 
-            this.dataGridViewPaymentsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPaymentsList.Location = new System.Drawing.Point(21, 145);
-            this.dataGridViewPaymentsList.Name = "dataGridViewPaymentsList";
-            this.dataGridViewPaymentsList.RowHeadersWidth = 62;
-            this.dataGridViewPaymentsList.RowTemplate.Height = 28;
-            this.dataGridViewPaymentsList.Size = new System.Drawing.Size(947, 358);
-            this.dataGridViewPaymentsList.TabIndex = 37;
-            this.dataGridViewPaymentsList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPaymentsList_CellContentClick);
+            this.comboBoxPaymentStatusFilter.FormattingEnabled = true;
+            this.comboBoxPaymentStatusFilter.Location = new System.Drawing.Point(564, 78);
+            this.comboBoxPaymentStatusFilter.Name = "comboBoxPaymentStatusFilter";
+            this.comboBoxPaymentStatusFilter.Size = new System.Drawing.Size(202, 33);
+            this.comboBoxPaymentStatusFilter.TabIndex = 71;
+            this.comboBoxPaymentStatusFilter.SelectedIndexChanged += new System.EventHandler(this.comboBoxPaymentStatusFilter_SelectedIndexChanged);
             // 
             // label20
             // 
@@ -759,19 +732,47 @@
             this.label19.TabIndex = 63;
             this.label19.Text = "Search by Order ID:";
             // 
-            // comboBoxPaymentStatusFilter
+            // btnBack4
             // 
-            this.comboBoxPaymentStatusFilter.FormattingEnabled = true;
-            this.comboBoxPaymentStatusFilter.Location = new System.Drawing.Point(564, 78);
-            this.comboBoxPaymentStatusFilter.Name = "comboBoxPaymentStatusFilter";
-            this.comboBoxPaymentStatusFilter.Size = new System.Drawing.Size(202, 33);
-            this.comboBoxPaymentStatusFilter.TabIndex = 71;
-            this.comboBoxPaymentStatusFilter.SelectedIndexChanged += new System.EventHandler(this.comboBoxPaymentStatusFilter_SelectedIndexChanged);
+            this.btnBack4.BackColor = System.Drawing.Color.Crimson;
+            this.btnBack4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBack4.Location = new System.Drawing.Point(811, 625);
+            this.btnBack4.Name = "btnBack4";
+            this.btnBack4.Size = new System.Drawing.Size(156, 41);
+            this.btnBack4.TabIndex = 39;
+            this.btnBack4.Text = "Back";
+            this.btnBack4.UseVisualStyleBackColor = false;
+            this.btnBack4.Click += new System.EventHandler(this.btnBack4_Click);
+            // 
+            // btnExport
+            // 
+            this.btnExport.BackColor = System.Drawing.Color.Orange;
+            this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnExport.Location = new System.Drawing.Point(211, 520);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(580, 75);
+            this.btnExport.TabIndex = 38;
+            this.btnExport.Text = "Export to MS Excel";
+            this.btnExport.UseVisualStyleBackColor = false;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
+            // dataGridViewPaymentsList
+            // 
+            this.dataGridViewPaymentsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPaymentsList.Location = new System.Drawing.Point(21, 145);
+            this.dataGridViewPaymentsList.Name = "dataGridViewPaymentsList";
+            this.dataGridViewPaymentsList.RowHeadersWidth = 62;
+            this.dataGridViewPaymentsList.RowTemplate.Height = 28;
+            this.dataGridViewPaymentsList.Size = new System.Drawing.Size(947, 358);
+            this.dataGridViewPaymentsList.TabIndex = 37;
+            this.dataGridViewPaymentsList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPaymentsList_CellContentClick);
             // 
             // frmPayments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1002, 730);
             this.Controls.Add(this.tabControl1);
             this.Name = "frmPayments";

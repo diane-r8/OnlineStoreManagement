@@ -37,7 +37,6 @@ namespace OnlineStoreManagement
             btnUpdateProductDetails.Click += btnUpdateProductDetails_Click;
             btnDeleteAccount.Click += btnDeleteAccount_Click;
             btnSearchbyProductName.Click += btnSearchbyProductName_Click;
-            btnSearchbyProductNameDelete.Click += btnSearchbyProductNameDelete_Click;
             btnExport.Click += btnExport_Click;
             btnBack.Click += BackToDashboard;
             btnBack2.Click += BackToDashboard;
@@ -127,6 +126,15 @@ namespace OnlineStoreManagement
         // --- ADD PRODUCT ---
         private void btnSaveProduct_Click(object sender, EventArgs e)
         {
+            // If all fields are empty, do nothing (prevents validation error after reset)
+            if (string.IsNullOrWhiteSpace(txtProductName.Text) &&
+                comboBoxCategory.SelectedIndex == -1 &&
+                numericUpDownPrice.Value == 0 &&
+                numericUpDownStockQuantity.Value == 0 &&
+                (richTextBoxDescription == null || string.IsNullOrWhiteSpace(richTextBoxDescription.Text)))
+            {
+                return;
+            }
             string name = txtProductName.Text.Trim();
             object catVal = (comboBoxCategory.SelectedItem as ComboBoxItem)?.Value;
             int? categoryId = null;
@@ -166,52 +174,18 @@ namespace OnlineStoreManagement
         }
 
         // --- UPDATE PRODUCT ---
-        private void btnSearchbyProductName_Click(object sender, EventArgs e)
-        {
-            string searchName = txtSearchbyProductName.Text.Trim();
-            if (string.IsNullOrWhiteSpace(searchName))
-            {
-                MessageBox.Show("Enter a product name to search.");
-                return;
-            }
-            using (var conn = DBConnection.GetConnection())
-            {
-                conn.Open();
-                string query = @"SELECT p.*, c.category_name AS category FROM products p LEFT JOIN productcategories c ON p.category_id = c.category_id WHERE p.product_name=@name";
-                using (var cmd = new MySqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@name", searchName);
-                    using (var reader = cmd.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            txtProductNameUpdate.Text = reader["product_name"].ToString();
-                            // Set category by category_id
-                            int categoryId = Convert.ToInt32(reader["category_id"]);
-                            foreach (var item in comboBoxCategoryUpdate.Items)
-                            {
-                                if (item is ComboBoxItem cbi && Convert.ToInt32(cbi.Value) == categoryId)
-                                {
-                                    comboBoxCategoryUpdate.SelectedItem = item;
-                                    break;
-                                }
-                            }
-                            numericUpDownPriceUpdate.Value = Convert.ToDecimal(reader["price"]);
-                            if (richTextBoxDescriptionUpdate != null)
-                                richTextBoxDescriptionUpdate.Text = reader["description"].ToString();
-                            numericUpDownStockQuantityUpdate.Value = Convert.ToInt32(reader["stock_quantity"]);
-                            txtProductNameUpdate.Tag = reader["product_id"]; // store id for update
-                        }
-                        else
-                        {
-                            MessageBox.Show("Product not found.");
-                        }
-                    }
-                }
-            }
-        }
         private void btnUpdateProductDetails_Click(object sender, EventArgs e)
         {
+            // If all fields are empty after reset, do nothing
+            if (string.IsNullOrWhiteSpace(txtProductNameUpdate.Text) &&
+                comboBoxCategoryUpdate.SelectedIndex == -1 &&
+                numericUpDownPriceUpdate.Value == 0 &&
+                numericUpDownStockQuantityUpdate.Value == 0 &&
+                (richTextBoxDescriptionUpdate == null || string.IsNullOrWhiteSpace(richTextBoxDescriptionUpdate.Text)) &&
+                txtProductNameUpdate.Tag == null)
+            {
+                return;
+            }
             if (txtProductNameUpdate.Tag == null)
             {
                 MessageBox.Show("Search for a product first.");
@@ -265,8 +239,7 @@ namespace OnlineStoreManagement
             string searchName = txtProductNameDelete.Text.Trim();
             if (string.IsNullOrWhiteSpace(searchName))
             {
-                MessageBox.Show("Enter a product name to search.");
-                return;
+                return; // Do nothing if search field is empty
             }
             using (var conn = DBConnection.GetConnection())
             {
@@ -280,6 +253,7 @@ namespace OnlineStoreManagement
                         if (reader.Read())
                         {
                             txtProductNameDelete.Tag = reader["product_id"]; // store id for delete
+                            // Only show the message once per search
                             MessageBox.Show($"Product found: {reader["product_name"]}\nCategory: {reader["category"]}\nPrice: {reader["price"]}\nStock: {reader["stock_quantity"]}\nDescription: {reader["description"]}");
                         }
                         else
@@ -292,6 +266,11 @@ namespace OnlineStoreManagement
         }
         private void btnDeleteAccount_Click(object sender, EventArgs e)
         {
+            // If all fields are empty after reset, do nothing
+            if (string.IsNullOrWhiteSpace(txtProductNameDelete.Text) && txtProductNameDelete.Tag == null)
+            {
+                return;
+            }
             if (txtProductNameDelete.Tag == null)
             {
                 MessageBox.Show("Search for a product first.");
@@ -399,7 +378,7 @@ namespace OnlineStoreManagement
             using (var conn = DBConnection.GetConnection())
             {
                 conn.Open();
-                string query = "SELECT category_id, category_name FROM productcategories";
+                string query = "SELECT category_id, category_name FROM productcategories ORDER BY category_name";
                 using (var cmd = new MySqlCommand(query, conn))
                 using (var reader = cmd.ExecuteReader())
                 {
@@ -420,7 +399,7 @@ namespace OnlineStoreManagement
             using (var conn = DBConnection.GetConnection())
             {
                 conn.Open();
-                string query = "SELECT category_id, category_name FROM productcategories";
+                string query = "SELECT category_id, category_name FROM productcategories ORDER BY category_name";
                 using (var cmd = new MySqlCommand(query, conn))
                 using (var reader = cmd.ExecuteReader())
                 {
@@ -442,7 +421,7 @@ namespace OnlineStoreManagement
             using (var conn = DBConnection.GetConnection())
             {
                 conn.Open();
-                string query = "SELECT category_name FROM productcategories";
+                string query = "SELECT category_name FROM productcategories ORDER BY category_name";
                 using (var cmd = new MySqlCommand(query, conn))
                 using (var reader = cmd.ExecuteReader())
                 {
@@ -527,6 +506,50 @@ namespace OnlineStoreManagement
             numericUpDownMinPrice.Value = 0;
             numericUpDownMaxPrice.Value = 0;
             LoadProductsList();
+        }
+
+        private void btnSearchbyProductName_Click(object sender, EventArgs e)
+        {
+            string searchName = txtSearchbyProductName.Text.Trim();
+            if (string.IsNullOrWhiteSpace(searchName))
+            {
+                return; // Do nothing if search field is empty
+            }
+            using (var conn = DBConnection.GetConnection())
+            {
+                conn.Open();
+                string query = @"SELECT p.*, c.category_name AS category FROM products p LEFT JOIN productcategories c ON p.category_id = c.category_id WHERE p.product_name=@name";
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@name", searchName);
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            txtProductNameUpdate.Text = reader["product_name"].ToString();
+                            // Set category by category_id
+                            int categoryId = Convert.ToInt32(reader["category_id"]);
+                            foreach (var item in comboBoxCategoryUpdate.Items)
+                            {
+                                if (item is ComboBoxItem cbi && Convert.ToInt32(cbi.Value) == categoryId)
+                                {
+                                    comboBoxCategoryUpdate.SelectedItem = item;
+                                    break;
+                                }
+                            }
+                            numericUpDownPriceUpdate.Value = Convert.ToDecimal(reader["price"]);
+                            if (richTextBoxDescriptionUpdate != null)
+                                richTextBoxDescriptionUpdate.Text = reader["description"].ToString();
+                            numericUpDownStockQuantityUpdate.Value = Convert.ToInt32(reader["stock_quantity"]);
+                            txtProductNameUpdate.Tag = reader["product_id"]; // store id for update
+                        }
+                        else
+                        {
+                            MessageBox.Show("Product not found.");
+                        }
+                    }
+                }
+            }
         }
     }
 }

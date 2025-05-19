@@ -372,7 +372,7 @@ namespace OnlineStoreManagement
             using (MySqlConnection conn = DBConnection.GetConnection())
             {
                 conn.Open();
-                string query = "SELECT customer_id, first_name, last_name FROM customers";
+                string query = "SELECT customer_id, first_name, last_name FROM customers ORDER BY first_name, last_name";
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 using (var reader = cmd.ExecuteReader())
                 {
@@ -394,7 +394,7 @@ namespace OnlineStoreManagement
             using (MySqlConnection conn = DBConnection.GetConnection())
             {
                 conn.Open();
-                string query = "SELECT product_id, product_name, price FROM products";
+                string query = "SELECT product_id, product_name, price FROM products ORDER BY product_name";
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 using (var reader = cmd.ExecuteReader())
                 {
@@ -417,7 +417,7 @@ namespace OnlineStoreManagement
             using (MySqlConnection conn = DBConnection.GetConnection())
             {
                 conn.Open();
-                string query = "SELECT customer_id, first_name, last_name FROM customers";
+                string query = "SELECT customer_id, first_name, last_name FROM customers ORDER BY first_name, last_name";
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 using (var reader = cmd.ExecuteReader())
                 {
@@ -439,7 +439,7 @@ namespace OnlineStoreManagement
             using (MySqlConnection conn = DBConnection.GetConnection())
             {
                 conn.Open();
-                string query = "SELECT product_id, product_name, price FROM products";
+                string query = "SELECT product_id, product_name, price FROM products ORDER BY product_name";
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 using (var reader = cmd.ExecuteReader())
                 {
@@ -548,7 +548,7 @@ namespace OnlineStoreManagement
             using (MySqlConnection conn = DBConnection.GetConnection())
             {
                 conn.Open();
-                string query = "SELECT o.order_id, CONCAT(c.first_name, ' ', c.last_name) AS customer, p.product_name, o.quantity, o.order_date, o.total_amount, o.status FROM orders o JOIN customers c ON o.customer_id = c.customer_id JOIN products p ON o.product_id = p.product_id";
+                string query = "SELECT o.order_id, CONCAT(c.first_name, ' ', c.last_name) AS customer, p.product_name, o.quantity, o.order_date, o.total_amount, o.status FROM orders o JOIN customers c ON o.customer_id = c.customer_id JOIN products p ON o.product_id = p.product_id ORDER BY o.order_id ASC";
                 MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
@@ -706,6 +706,7 @@ namespace OnlineStoreManagement
                     query.Append(" AND o.status = @status");
                 }
                 query.Append(" AND YEAR(o.order_date) = @year AND MONTH(o.order_date) = @month");
+                query.Append(" ORDER BY o.order_id ASC");
                 using (var cmd = new MySqlCommand(query.ToString(), conn))
                 {
                     if (!string.IsNullOrWhiteSpace(search))
