@@ -1,0 +1,8 @@
+# Generated installer
+OnlineStoreManagement_Installer.exe
+
+# MySQL installer (should be downloaded separately)
+mysql-installer-community-8.0.42.0.msi
+
+# Output directory (if you create one)
+Output/ 

@@ -1,0 +1,3 @@
+CREATE DATABASE IF NOT EXISTS onlinestore;
+GRANT ALL PRIVILEGES ON onlinestore.* TO 'root'@'localhost';
+FLUSH PRIVILEGES;
